@@ -1503,4 +1503,55 @@
     options: ["212°F", "100°F", "180°F"],
     answer: "212°F"
   },
+    
+      {
+    question: "Which Indian city is known as the City of Pearls? (Q451)",
+    options: ["Hyderabad", "Mumbai", "Chennai"],
+    answer: "Hyderabad"
+  },
+  {
+    question: "Which state is famous for the Gir National Park? (Q452)",
+    options: ["Gujarat", "Madhya Pradesh", "Maharashtra"],
+    answer: "Gujarat"
+  },
+  {
+    question: "Which is the oldest language in the world? (Q453)",
+    options: ["Tamil", "Sanskrit", "Hebrew"],
+    answer: "Tamil"
+  },
+  {
+    question: "Who was the first woman to win a Nobel Prize in two different fields? (Q454)",
+    options: ["Marie Curie", "Mother Teresa", "Rosalind Franklin"],
+    answer: "Marie Curie"
+  },
+  {
+    question: "Which is the highest railway bridge in the world? (Q455)",
+    options: ["Chenab Bridge", "Millau Viaduct", "Forth Bridge"],
+    answer: "Chenab Bridge"
+  },
+  {
+    question: "What is the process of water cycle called? (Q456)",
+    options: ["Hydrologic Cycle", "Oxygen Cycle", "Nitrogen Cycle"],
+    answer: "Hydrologic Cycle"
+  },
+  {
+    question: "Which Indian state is famous for Kaziranga National Park? (Q457)",
+    options: ["Assam", "Meghalaya", "Tripura"],
+    answer: "Assam"
+  },
+  {
+    question: "Which Indian leader was also a lawyer? (Q458)",
+    options: ["Mahatma Gandhi", "Lal Bahadur Shastri", "Rajendra Prasad"],
+    answer: "Mahatma Gandhi"
+  },
+  {
+    question: "What is the deepest ocean in the world? (Q459)",
+    options: ["Pacific Ocean", "Atlantic Ocean", "Indian Ocean"],
+    answer: "Pacific Ocean"
+  },
+  {
+    question: "Which bird can fly backward? (Q460)",
+    options: ["Hummingbird", "Parrot", "Eagle"],
+    answer: "Hummingbird"
+  },
 ];
