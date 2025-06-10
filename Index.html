@@ -64,6 +64,7 @@
     <p id="result"></p>
     <p>🏦 Balance: ₹<span id="balance">0.00</span></p>
     <button class="btn" onclick="showWithdrawal()">💳 Withdraw</button>
+    <button class="btn" onclick="resetQuizProgress()">🔁 Restart Quiz</button>
   </div>
 
   <div class="upi-form" id="upiForm">
@@ -73,12 +74,11 @@
     <button class="btn" onclick="submitWithdrawal()">Submit</button>
   </div>
 
-  <!-- 🔗 Link to 1000-question JS file -->
   <script src="questions-1000.js"></script>
-
   <script>
     let balance = parseFloat(localStorage.getItem("balance")) || 0;
     let quizCount = parseInt(localStorage.getItem("quizCount")) || 0;
+    let currentIndex = parseInt(localStorage.getItem("currentIndex")) || 0;
     const maxDailyQuizzes = 20;
     const perQuizReward = 0.50;
 
@@ -87,10 +87,17 @@
     function saveProgress() {
       localStorage.setItem("balance", balance.toFixed(2));
       localStorage.setItem("quizCount", quizCount);
+      localStorage.setItem("currentIndex", currentIndex);
     }
 
     function loadQuestion() {
-      const q = questions[Math.floor(Math.random() * questions.length)];
+      if (currentIndex >= questions.length || quizCount >= maxDailyQuizzes) {
+        document.getElementById("qText").innerText = "🎉 You've completed all available quizzes for today!";
+        document.getElementById("options").innerHTML = "";
+        return;
+      }
+
+      const q = questions[currentIndex];
       document.getElementById("qText").innerText = q.question;
       document.getElementById("options").innerHTML = q.options.map(opt =>
         `<button class="btn" onclick="checkAnswer('${opt}', '${q.answer}')">${opt}</button>`
@@ -101,14 +108,10 @@
     function checkAnswer(selected, correct) {
       const result = document.getElementById("result");
 
-      if (quizCount >= maxDailyQuizzes) {
-        result.innerText = "🚫 Daily limit reached. Come back tomorrow!";
-        return;
-      }
-
       if (selected === correct) {
         quizCount++;
         balance += perQuizReward;
+        currentIndex++;
         result.innerText = `✅ Correct! +₹${perQuizReward.toFixed(2)} (Quiz ${quizCount}/${maxDailyQuizzes})`;
         document.getElementById("balance").innerText = balance.toFixed(2);
         saveProgress();
@@ -138,12 +141,11 @@
       }
 
       const amount = balance.toFixed(2);
-
-      const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfRW0Fr1Xqt9qjjZDipd-Bmfu9jXaGhx62IqMkBzmzV7G-xpg/viewform";
+      const formUrl = "https://docs.google.com/forms/d/1djyUsAnYr-AHO2szJHuf-W0E_hsroFHAUlQsexTqsIw";
 
       const formData = new FormData();
-      formData.append("entry.1319748268", upi);     // UPI ID field
-      formData.append("entry.1425363057", amount);  // Amount field
+      formData.append("entry.1319748268", upi);
+      formData.append("entry.1425363057", amount);
 
       fetch(formUrl, {
         method: "POST",
@@ -154,9 +156,22 @@
       alert(`🎉 Withdrawal request for ₹${amount} sent to ${upi}`);
       balance = 0;
       quizCount = 0;
+      currentIndex = 0;
       saveProgress();
       document.getElementById("balance").innerText = balance.toFixed(2);
       document.getElementById("upiForm").style.display = 'none';
+      loadQuestion();
+    }
+
+    function resetQuizProgress() {
+      localStorage.removeItem("currentIndex");
+      localStorage.removeItem("quizCount");
+      localStorage.removeItem("balance");
+      currentIndex = 0;
+      quizCount = 0;
+      balance = 0;
+      document.getElementById("balance").innerText = balance.toFixed(2);
+      loadQuestion();
     }
 
     loadQuestion();
