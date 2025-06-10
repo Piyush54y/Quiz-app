@@ -74,19 +74,92 @@
   </div>
 
   <script>
-<script src="questions-1000.js"></script>
-    const questions = [
-      {
-        question: "What is the capital of India?",
-        options: ["Delhi", "Mumbai", "Kolkata"],
-        answer: "Delhi"
-      },
-      {
-        question: "Which planet is known as the Red Planet?",
-        options: ["Mars", "Earth", "Venus"],
-        answer: "Mars"
-      }
-    ];
+const questions = [];
+
+const templates = [
+  {
+    template: "What is the capital of {country}?",
+    options: {
+      India: "Delhi",
+      France: "Paris",
+      Germany: "Berlin",
+      Japan: "Tokyo",
+      Brazil: "Brasília",
+      Australia: "Canberra",
+      Canada: "Ottawa"
+    }
+  },
+  {
+    template: "Which planet is known as the {nickname}?",
+    options: {
+      "Red Planet": "Mars",
+      "Blue Planet": "Earth",
+      "Ringed Planet": "Saturn",
+      "Giant Planet": "Jupiter",
+      "Evening Star": "Venus"
+    }
+  },
+  {
+    template: "Who wrote '{book}'?",
+    options: {
+      "1984": "George Orwell",
+      "Hamlet": "William Shakespeare",
+      "Pride and Prejudice": "Jane Austen",
+      "The Alchemist": "Paulo Coelho",
+      "Animal Farm": "George Orwell"
+    }
+  },
+  {
+    template: "What is the square root of {number}?",
+    options: {
+      "64": "8",
+      "100": "10",
+      "81": "9",
+      "49": "7",
+      "36": "6"
+    }
+  },
+  {
+    template: "Which year did {country} gain independence?",
+    options: {
+      "India": "1947",
+      "USA": "1776",
+      "Pakistan": "1947",
+      "Bangladesh": "1971",
+      "Nigeria": "1960"
+    }
+  }
+];
+
+// Generate 1000 unique questions
+while (questions.length < 1000) {
+  const item = templates[Math.floor(Math.random() * templates.length)];
+  const entries = Object.entries(item.options);
+  const [key, correctAnswer] = entries[Math.floor(Math.random() * entries.length)];
+
+  const questionText = item.template
+    .replace("{country}", key)
+    .replace("{nickname}", key)
+    .replace("{book}", key)
+    .replace("{number}", key);
+
+  // Create 3 options including the correct one
+  let options = [correctAnswer];
+  while (options.length < 3) {
+    const randomOption = entries[Math.floor(Math.random() * entries.length)][1];
+    if (!options.includes(randomOption)) options.push(randomOption);
+  }
+
+  // Shuffle options
+  options = options.sort(() => Math.random() - 0.5);
+
+  questions.push({
+    question: questionText,
+    options: options,
+    answer: correctAnswer
+  });
+}
+
 
     let balance = parseFloat(localStorage.getItem("balance")) || 0;
     let quizCount = parseInt(localStorage.getItem("quizCount")) || 0;
