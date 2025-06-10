@@ -52,9 +52,9 @@
 </head>
 <body>
 
-  <div style="background: #ffeb3b; padding: 20px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin-bottom: 20px;">
+  <div style="background: #ffeb3b; padding: 20px; border-radius: 12px; margin-bottom: 20px;">
     <h2 style="margin: 0; color: #d32f2f;">🎁 Take Quiz & Earn ₹1000 Paytm Cash!</h2>
-    <p style="font-size: 16px; color: #333;">💸 Earn ₹0.50 per quiz | 🧠 Max 20 quizzes daily</p>
+    <p>💸 ₹0.50 per correct answer | Max 20 quizzes/day</p>
   </div>
 
   <h1>🧠 Quiz & Earn ₹0.50</h1>
@@ -73,19 +73,35 @@
     <button class="btn" onclick="submitWithdrawal()">Submit</button>
   </div>
 
-  <script src="questions-1000.js"></script>
+  <!-- 🔁 EMBEDDED QUESTIONS FILE -->
   <script>
-    let balance = 0;
-    let quizCount = 0;
+    const questions = [
+      { question: "What is the capital of France?", options: ["Paris", "Rome", "Berlin"], answer: "Paris" },
+      { question: "Which planet is known as the Red Planet?", options: ["Earth", "Mars", "Jupiter"], answer: "Mars" },
+      // ✅ Add 1000+ questions here (use JS file or generator tool)
+    ];
+  </script>
+
+  <!-- ✅ Main App Logic with localStorage -->
+  <script>
+    let balance = parseFloat(localStorage.getItem("balance")) || 0;
+    let quizCount = parseInt(localStorage.getItem("quizCount")) || 0;
     const maxDailyQuizzes = 20;
     const perQuizReward = 0.50;
+
+    document.getElementById("balance").innerText = balance.toFixed(2);
+
+    function saveProgress() {
+      localStorage.setItem("balance", balance.toFixed(2));
+      localStorage.setItem("quizCount", quizCount);
+    }
 
     function loadQuestion() {
       const q = questions[Math.floor(Math.random() * questions.length)];
       document.getElementById("qText").innerText = q.question;
-      document.getElementById("options").innerHTML = q.options.map(function(opt) {
-        return `<button class='btn' onclick="checkAnswer('${opt}', '${q.answer}')">${opt}</button>`;
-      }).join('');
+      document.getElementById("options").innerHTML = q.options.map(opt =>
+        `<button class="btn" onclick="checkAnswer('${opt}', '${q.answer}')">${opt}</button>`
+      ).join('');
       document.getElementById("result").innerText = "";
     }
 
@@ -93,7 +109,7 @@
       const result = document.getElementById("result");
 
       if (quizCount >= maxDailyQuizzes) {
-        result.innerText = "🚫 Daily limit reached (20 quizzes). Come back tomorrow!";
+        result.innerText = "🚫 Daily limit reached. Come back tomorrow!";
         return;
       }
 
@@ -102,13 +118,14 @@
         balance += perQuizReward;
         result.innerText = `✅ Correct! +₹${perQuizReward.toFixed(2)} (Quiz ${quizCount}/${maxDailyQuizzes})`;
         document.getElementById("balance").innerText = balance.toFixed(2);
+        saveProgress();
 
         setTimeout(() => {
-          window.open("https://otieu.com/4/4077241", "_blank");
+          window.open("https://otieu.com/4/4077241", "_blank"); // Monetag SmartLink
           loadQuestion();
         }, 1000);
       } else {
-        result.innerText = "❌ Incorrect. Try again.";
+        result.innerText = "❌ Incorrect. Try again!";
       }
     }
 
@@ -123,9 +140,10 @@
     function submitWithdrawal() {
       const upi = document.getElementById("upiId").value;
       if (upi) {
-        alert(`🎉 UPI request submitted for ₹${balance.toFixed(2)} to ${upi}`);
+        alert(`🎉 UPI request sent for ₹${balance.toFixed(2)} to ${upi}`);
         balance = 0;
         quizCount = 0;
+        saveProgress();
         document.getElementById("balance").innerText = balance.toFixed(2);
         document.getElementById("upiForm").style.display = 'none';
       } else {
