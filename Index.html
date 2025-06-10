@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -144,7 +144,26 @@
       }
     }
 
-    loadQuestion();
+    let usedQuestions = [];
+
+function loadQuestion() {
+  if (usedQuestions.length === questions.length) {
+    usedQuestions = []; // Reset if all questions used
+  }
+
+  let q;
+  do {
+    q = questions[Math.floor(Math.random() * questions.length)];
+  } while (usedQuestions.includes(q));
+
+  usedQuestions.push(q);
+
+  document.getElementById("qText").innerText = q.question;
+  document.getElementById("options").innerHTML = q.options.map(opt =>
+    `<button class="btn" onclick="checkAnswer('${opt}', '${q.answer}')">${opt}</button>`
+  ).join('');
+  document.getElementById("result").innerText = "";
+}
   </script>
 </body>
 </html>
