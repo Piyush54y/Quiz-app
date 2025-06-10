@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz & Earn ₹1</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      padding: 20px;
+      text-align: center;
+      color: #333;
+    }
+    .question-box {
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      max-width: 500px;
+      margin: 20px auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 6px;
+      border: none;
+      background: #e91e63;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #c2185b;
+    }
+    #balance {
+      font-weight: bold;
+      color: green;
+    }
+    .upi-form {
+      display: none;
+      margin-top: 20px;
+    }
+    input {
+      padding: 10px;
+      width: 80%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🧠 Quiz & Earn ₹1</h1>
+  <div class="question-box">
+    <p id="qText">Loading question...</p>
+    <div id="options"></div>
+    <p id="result"></p>
+    <p>🏦 Balance: ₹<span id="balance">0</span></p>
+    <button class="btn" onclick="showWithdrawal()">💳 Withdraw</button>
+  </div>
+
+  <div class="upi-form" id="upiForm">
+    <h3>Enter UPI ID</h3>
+    <input type="text" id="upiId" placeholder="yourupi@bank" />
+    <br />
+    <button class="btn" onclick="submitWithdrawal()">Submit</button>
+  </div>
+
+  <!-- Load Questions from External File -->
+  <script src="questions.js"></script>
+
+  <!-- Quiz Logic -->
+  <script>
+    let balance = 0;
+
+    function loadQuestion() {
+      const q = questions[Math.floor(Math.random() * questions.length)];
+      document.getElementById("qText").innerText = q.question;
+      document.getElementById("options").innerHTML = q.options.map(opt =>
+        `<button class="btn" onclick="checkAnswer('${opt}', '${q.answer}')">${opt}</button>`
+      ).join('');
+      document.getElementById("result").innerText = "";
+    }
+
+    function checkAnswer(selected, correct) {
+      const result = document.getElementById("result");
+      if (selected === correct) {
+        result.innerText = "✅ Correct! ₹1 added.";
+        balance += 1;
+        document.getElementById("balance").innerText = balance;
+        setTimeout(() => {
+          window.open("https://your-monetag-smartlink.com", "_blank"); // Monetag link
+          loadQuestion();
+        }, 1000);
+      } else {
+        result.innerText = "❌ Incorrect. Try again.";
+      }
+    }
+
+    function showWithdrawal() {
+      if (balance < 100) {
+        alert("🚫 You need ₹100 to withdraw.");
+      } else {
+        document.getElementById("upiForm").style.display = 'block';
+      }
+    }
+
+    function submitWithdrawal() {
+      const upi = document.getElementById("upiId").value;
+      if (upi) {
+        alert(`🎉 Request sent to ${upi} for ₹${balance}.`);
+        balance = 0;
+        document.getElementById("balance").innerText = balance;
+        document.getElementById("upiForm").style.display = 'none';
+      } else {
+        alert("❗ Please enter a valid UPI ID.");
+      }
+    }
+
+    loadQuestion();
+  </script>
+</body>
+</html>
