@@ -1,112 +1,176 @@
-const questions = [];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz & Earn ₹0.50</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      padding: 20px;
+      text-align: center;
+      color: #333;
+    }
+    .question-box {
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      max-width: 500px;
+      margin: 20px auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 6px;
+      border: none;
+      background: #e91e63;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #c2185b;
+    }
+    #balance {
+      font-weight: bold;
+      color: green;
+    }
+    .upi-form {
+      display: none;
+      margin-top: 20px;
+    }
+    input {
+      padding: 10px;
+      width: 80%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
 
-const templates = [
-  {
-    template: "What is the capital of {country}?",
-    options: {
-      India: "Delhi",
-      France: "Paris",
-      Germany: "Berlin",
-      Japan: "Tokyo",
-      Brazil: "Brasília",
-      Australia: "Canberra",
-      Canada: "Ottawa",
-      Italy: "Rome",
-      China: "Beijing",
-      Russia: "Moscow"
-    }
-  },
-  {
-    template: "Which planet is known as the {nickname}?",
-    options: {
-      "Red Planet": "Mars",
-      "Blue Planet": "Earth",
-      "Ringed Planet": "Saturn",
-      "Giant Planet": "Jupiter",
-      "Evening Star": "Venus",
-      "Dwarf Planet": "Pluto"
-    }
-  },
-  {
-    template: "Who wrote '{book}'?",
-    options: {
-      "1984": "George Orwell",
-      "Hamlet": "William Shakespeare",
-      "Pride and Prejudice": "Jane Austen",
-      "The Alchemist": "Paulo Coelho",
-      "Animal Farm": "George Orwell",
-      "The Kite Runner": "Khaled Hosseini"
-    }
-  },
-  {
-    template: "What is the square root of {number}?",
-    options: {
-      "64": "8",
-      "100": "10",
-      "81": "9",
-      "49": "7",
-      "36": "6",
-      "25": "5"
-    }
-  },
-  {
-    template: "Which year did {country} gain independence?",
-    options: {
-      "India": "1947",
-      "USA": "1776",
-      "Pakistan": "1947",
-      "Bangladesh": "1971",
-      "Nigeria": "1960",
-      "South Africa": "1994"
-    }
-  },
-  {
-    template: "Which ocean is the largest?",
-    options: {
-      "largest": "Pacific Ocean",
-      "second largest": "Atlantic Ocean",
-      "third largest": "Indian Ocean"
-    }
-  },
-  {
-    template: "Which is the national animal of {country}?",
-    options: {
-      "India": "Tiger",
-      "Australia": "Kangaroo",
-      "USA": "Bald Eagle",
-      "Russia": "Bear",
-      "China": "Panda"
-    }
-  }
-];
+  <div style="background: #ffeb3b; padding: 20px; border-radius: 12px; margin-bottom: 20px;">
+    <h2 style="margin: 0; color: #d32f2f;">🎁 Take Quiz & Earn ₹1000 Paytm Cash!</h2>
+    <p>💸 ₹0.50 per correct answer | 🧠 Max 20 quizzes/day</p>
+  </div>
 
-// Utility to shuffle array
-function shuffle(array) {
-  return array.sort(() => Math.random() - 0.5);
-}
+  <h1>🧠 Quiz & Earn ₹0.50</h1>
+  <div class="question-box">
+    <p id="qText">Loading question...</p>
+    <div id="options"></div>
+    <p id="result"></p>
+    <p>🏦 Balance: ₹<span id="balance">0.00</span></p>
+    <button class="btn" onclick="showWithdrawal()">💳 Withdraw</button>
+  </div>
 
-// Generate 1000 questions
-while (questions.length < 1000) {
-  const block = templates[Math.floor(Math.random() * templates.length)];
-  const entries = Object.entries(block.options);
-  const [key, correctAnswer] = entries[Math.floor(Math.random() * entries.length)];
+  <div class="upi-form" id="upiForm">
+    <h3>Enter UPI ID</h3>
+    <input type="text" id="upiId" placeholder="yourupi@bank" />
+    <br />
+    <button class="btn" onclick="submitWithdrawal()">Submit</button>
+  </div>
 
-  const questionText = block.template
-    .replace("{country}", key)
-    .replace("{nickname}", key)
-    .replace("{book}", key)
-    .replace("{number}", key);
+  <script>
+    // Sample Questions – Add more or link external file
+    const questions = [
+      {
+        question: "What is the capital of India?",
+        options: ["Delhi", "Mumbai", "Kolkata"],
+        answer: "Delhi"
+      },
+      {
+        question: "Which planet is known as the Red Planet?",
+        options: ["Mars", "Earth", "Venus"],
+        answer: "Mars"
+      }
+    ];
 
-  // Create answer options
-  const options = [correctAnswer];
-  while (options.length < 3) {
-    const randomOpt = entries[Math.floor(Math.random() * entries.length)][1];
-    if (!options.includes(randomOpt)) options.push(randomOpt);
-  }
+    let balance = parseFloat(localStorage.getItem("balance")) || 0;
+    let quizCount = parseInt(localStorage.getItem("quizCount")) || 0;
+    const maxDailyQuizzes = 20;
+    const perQuizReward = 0.50;
 
-  questions.push({
-    question: `${questionText} (Q${questions.length + 1})`,
-    options: shuffle(options),
-    answer: correctAnswer
-  });
-}
+    document.getElementById("balance").innerText = balance.toFixed(2);
+
+    function saveProgress() {
+      localStorage.setItem("balance", balance.toFixed(2));
+      localStorage.setItem("quizCount", quizCount);
+    }
+
+    function loadQuestion() {
+      const q = questions[Math.floor(Math.random() * questions.length)];
+      document.getElementById("qText").innerText = q.question;
+      document.getElementById("options").innerHTML = q.options.map(opt =>
+        `<button class="btn" onclick="checkAnswer('${opt}', '${q.answer}')">${opt}</button>`
+      ).join('');
+      document.getElementById("result").innerText = "";
+    }
+
+    function checkAnswer(selected, correct) {
+      const result = document.getElementById("result");
+
+      if (quizCount >= maxDailyQuizzes) {
+        result.innerText = "🚫 Daily limit reached. Come back tomorrow!";
+        return;
+      }
+
+      if (selected === correct) {
+        quizCount++;
+        balance += perQuizReward;
+        result.innerText = `✅ Correct! +₹${perQuizReward.toFixed(2)} (Quiz ${quizCount}/${maxDailyQuizzes})`;
+        document.getElementById("balance").innerText = balance.toFixed(2);
+        saveProgress();
+
+        setTimeout(() => {
+          window.open("https://otieu.com/4/4077241", "_blank");
+          loadQuestion();
+        }, 1000);
+      } else {
+        result.innerText = "❌ Incorrect. Try again!";
+      }
+    }
+
+    function showWithdrawal() {
+      if (balance < 100) {
+        alert("🚫 You need ₹100 to withdraw.");
+      } else {
+        document.getElementById("upiForm").style.display = 'block';
+      }
+    }
+
+    function submitWithdrawal() {
+      const upi = document.getElementById("upiId").value;
+      if (!upi) {
+        alert("❗ Please enter a valid UPI ID.");
+        return;
+      }
+
+      const amount = balance.toFixed(2);
+
+      const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSc_VFKnD6XCUFi8Yu7MD0DrwbPZ4eH5JuEkPNgTzbtA0Lu5Xw/formResponse";
+
+      const formData = new FormData();
+      formData.append("entry.1319748268", upi);     // UPI ID field
+      formData.append("entry.1425363057", amount);  // Amount field
+
+      fetch(formUrl, {
+        method: "POST",
+        mode: "no-cors",
+        body: formData
+      });
+
+      alert(`🎉 Withdrawal request for ₹${amount} sent to ${upi}`);
+      balance = 0;
+      quizCount = 0;
+      saveProgress();
+      document.getElementById("balance").innerText = balance.toFixed(2);
+      document.getElementById("upiForm").style.display = 'none';
+    }
+
+    loadQuestion();
+  </script>
+</body>
+</html>
