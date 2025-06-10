@@ -749,4 +749,254 @@
     options: ["Blue Whale", "Elephant", "Shark"],
     answer: "Blue Whale"
   },
+      {
+    question: "What is the capital of the USA? (Q201)",
+    options: ["Washington D.C.", "New York", "Los Angeles"],
+    answer: "Washington D.C."
+  },
+  {
+    question: "Which organ purifies blood in the human body? (Q202)",
+    options: ["Kidney", "Liver", "Heart"],
+    answer: "Kidney"
+  },
+  {
+    question: "Which festival is also called the Festival of Colors? (Q203)",
+    options: ["Holi", "Diwali", "Baisakhi"],
+    answer: "Holi"
+  },
+  {
+    question: "Which state in India is famous for Bihu dance? (Q204)",
+    options: ["Assam", "Manipur", "Nagaland"],
+    answer: "Assam"
+  },
+  {
+    question: "What is the study of rocks called? (Q205)",
+    options: ["Geology", "Zoology", "Botany"],
+    answer: "Geology"
+  },
+  {
+    question: "What is the nearest star to Earth? (Q206)",
+    options: ["Sun", "Alpha Centauri", "Sirius"],
+    answer: "Sun"
+  },
+  {
+    question: "Who is known as the Father of India? (Q207)",
+    options: ["Mahatma Gandhi", "Jawaharlal Nehru", "Subhash Chandra Bose"],
+    answer: "Mahatma Gandhi"
+  },
+  {
+    question: "Which city is known as the Diamond City of India? (Q208)",
+    options: ["Surat", "Mumbai", "Hyderabad"],
+    answer: "Surat"
+  },
+  {
+    question: "Which Indian state is famous for sandalwood? (Q209)",
+    options: ["Karnataka", "Tamil Nadu", "Kerala"],
+    answer: "Karnataka"
+  },
+  {
+    question: "Which gas do plants absorb during photosynthesis? (Q210)",
+    options: ["Carbon Dioxide", "Oxygen", "Nitrogen"],
+    answer: "Carbon Dioxide"
+  },
+  {
+    question: "Which is the largest freshwater lake in India? (Q211)",
+    options: ["Wular Lake", "Dal Lake", "Chilka Lake"],
+    answer: "Wular Lake"
+  },
+  {
+    question: "What is the capital of Maharashtra? (Q212)",
+    options: ["Mumbai", "Pune", "Nagpur"],
+    answer: "Mumbai"
+  },
+  {
+    question: "Who was the first President of India? (Q213)",
+    options: ["Dr. Rajendra Prasad", "Dr. Radhakrishnan", "Jawaharlal Nehru"],
+    answer: "Dr. Rajendra Prasad"
+  },
+  {
+    question: "Which planet is famous for its rings? (Q214)",
+    options: ["Saturn", "Mars", "Neptune"],
+    answer: "Saturn"
+  },
+  {
+    question: "Which is the oldest mountain range in India? (Q215)",
+    options: ["Aravalli", "Himalayas", "Vindhyas"],
+    answer: "Aravalli"
+  },
+  {
+    question: "Which is the largest organ in the human body? (Q216)",
+    options: ["Skin", "Liver", "Heart"],
+    answer: "Skin"
+  },
+  {
+    question: "Which is the fastest bird in the world? (Q217)",
+    options: ["Peregrine Falcon", "Eagle", "Sparrow"],
+    answer: "Peregrine Falcon"
+  },
+  {
+    question: "Which is the smallest bone in the human body? (Q218)",
+    options: ["Stapes", "Femur", "Ulna"],
+    answer: "Stapes"
+  },
+  {
+    question: "Which is the smallest country in the world? (Q219)",
+    options: ["Vatican City", "Monaco", "San Marino"],
+    answer: "Vatican City"
+  },
+  {
+    question: "Which planet takes the longest time to orbit the Sun? (Q220)",
+    options: ["Neptune", "Saturn", "Uranus"],
+    answer: "Neptune"
+  },
+  {
+    question: "Which country invented paper? (Q221)",
+    options: ["China", "Egypt", "India"],
+    answer: "China"
+  },
+  {
+    question: "Which blood cells fight diseases? (Q222)",
+    options: ["White Blood Cells", "Red Blood Cells", "Platelets"],
+    answer: "White Blood Cells"
+  },
+  {
+    question: "Which state is the Sunderbans forest located in? (Q223)",
+    options: ["West Bengal", "Odisha", "Bihar"],
+    answer: "West Bengal"
+  },
+  {
+    question: "Which Indian state is known as 'God’s Own Country'? (Q224)",
+    options: ["Kerala", "Himachal Pradesh", "Goa"],
+    answer: "Kerala"
+  },
+  {
+    question: "Which fruit is known as the King of Fruits? (Q225)",
+    options: ["Mango", "Apple", "Banana"],
+    answer: "Mango"
+  },
+  {
+    question: "Which Mughal ruler built the Red Fort? (Q226)",
+    options: ["Shah Jahan", "Akbar", "Babur"],
+    answer: "Shah Jahan"
+  },
+  {
+    question: "What is the capital of Telangana? (Q227)",
+    options: ["Hyderabad", "Warangal", "Nizamabad"],
+    answer: "Hyderabad"
+  },
+  {
+    question: "Which Indian river is the longest? (Q228)",
+    options: ["Ganga", "Godavari", "Yamuna"],
+    answer: "Ganga"
+  },
+  {
+    question: "Who invented electricity? (Q229)",
+    options: ["Benjamin Franklin", "Edison", "Newton"],
+    answer: "Benjamin Franklin"
+  },
+  {
+    question: "Which is the hottest planet in the solar system? (Q230)",
+    options: ["Venus", "Mercury", "Mars"],
+    answer: "Venus"
+  },
+  {
+    question: "Which city is the capital of Karnataka? (Q231)",
+    options: ["Bengaluru", "Mysore", "Hubli"],
+    answer: "Bengaluru"
+  },
+  {
+    question: "Which vitamin helps in calcium absorption? (Q232)",
+    options: ["Vitamin D", "Vitamin A", "Vitamin C"],
+    answer: "Vitamin D"
+  },
+  {
+    question: "Which Indian city is known as the Orange City? (Q233)",
+    options: ["Nagpur", "Pune", "Nashik"],
+    answer: "Nagpur"
+  },
+  {
+    question: "Which dance is famous in Tamil Nadu? (Q234)",
+    options: ["Bharatanatyam", "Kathak", "Mohiniyattam"],
+    answer: "Bharatanatyam"
+  },
+  {
+    question: "Which is the longest wall in the world? (Q235)",
+    options: ["Great Wall of China", "Berlin Wall", "Wall of India"],
+    answer: "Great Wall of China"
+  },
+  {
+    question: "What is the primary source of energy for the Earth? (Q236)",
+    options: ["Sun", "Moon", "Wind"],
+    answer: "Sun"
+  },
+  {
+    question: "Which metal is used in making aircraft bodies? (Q237)",
+    options: ["Aluminium", "Copper", "Iron"],
+    answer: "Aluminium"
+  },
+  {
+    question: "Which gas is used in electric bulbs? (Q238)",
+    options: ["Argon", "Oxygen", "Carbon Dioxide"],
+    answer: "Argon"
+  },
+  {
+    question: "What is the national currency of India? (Q239)",
+    options: ["Rupee", "Taka", "Yen"],
+    answer: "Rupee"
+  },
+  {
+    question: "What is the square of 12? (Q240)",
+    options: ["144", "121", "132"],
+    answer: "144"
+  },
+  {
+    question: "Which country is called the Land of a Thousand Lakes? (Q241)",
+    options: ["Finland", "Sweden", "Norway"],
+    answer: "Finland"
+  },
+  {
+    question: "Which tree gives us rubber? (Q242)",
+    options: ["Rubber tree", "Neem", "Banyan"],
+    answer: "Rubber tree"
+  },
+  {
+    question: "Which city is the capital of Gujarat? (Q243)",
+    options: ["Gandhinagar", "Ahmedabad", "Surat"],
+    answer: "Gandhinagar"
+  },
+  {
+    question: "What is the currency of Japan? (Q244)",
+    options: ["Yen", "Won", "Ringgit"],
+    answer: "Yen"
+  },
+  {
+    question: "What is the chemical symbol of iron? (Q245)",
+    options: ["Fe", "Ir", "I"],
+    answer: "Fe"
+  },
+  {
+    question: "Who is the current President of India? (Q246)",
+    options: ["Droupadi Murmu", "Ram Nath Kovind", "Narendra Modi"],
+    answer: "Droupadi Murmu"
+  },
+  {
+    question: "Which city is known as the Pink City? (Q247)",
+    options: ["Jaipur", "Jodhpur", "Udaipur"],
+    answer: "Jaipur"
+  },
+  {
+    question: "Which is the largest fish in the ocean? (Q248)",
+    options: ["Whale Shark", "Blue Whale", "Hammerhead"],
+    answer: "Whale Shark"
+  },
+  {
+    question: "Which Indian state has the highest population? (Q249)",
+    options: ["Uttar Pradesh", "Maharashtra", "Bihar"],
+    answer: "Uttar Pradesh"
+  },
+  {
+    question: "Which gas do humans exhale? (Q250)",
+    options: ["Carbon Dioxide", "Oxygen", "Hydrogen"],
+    answer: "Carbon Dioxide"
+  },
 ];
