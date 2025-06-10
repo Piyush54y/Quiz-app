@@ -1503,7 +1503,507 @@
     options: ["212°F", "100°F", "180°F"],
     answer: "212°F"
   },
-    
+      {
+    question: "Which organ of the body produces insulin? (Q351)",
+    options: ["Pancreas", "Liver", "Stomach"],
+    answer: "Pancreas"
+  },
+  {
+    question: "Which Indian city is known as the Manchester of India? (Q352)",
+    options: ["Ahmedabad", "Surat", "Kanpur"],
+    answer: "Ahmedabad"
+  },
+  {
+    question: "Who was the first Indian woman to climb Mount Everest? (Q353)",
+    options: ["Bachendri Pal", "Santosh Yadav", "Premlata Agarwal"],
+    answer: "Bachendri Pal"
+  },
+  {
+    question: "What is the full form of CPU? (Q354)",
+    options: ["Central Processing Unit", "Computer Processing Unit", "Central Power Unit"],
+    answer: "Central Processing Unit"
+  },
+  {
+    question: "Which city is known as the Gateway of India? (Q355)",
+    options: ["Mumbai", "Kolkata", "Delhi"],
+    answer: "Mumbai"
+  },
+  {
+    question: "Which gas is known as laughing gas? (Q356)",
+    options: ["Nitrous Oxide", "Carbon Dioxide", "Methane"],
+    answer: "Nitrous Oxide"
+  },
+  {
+    question: "Which continent has the largest population? (Q357)",
+    options: ["Asia", "Africa", "Europe"],
+    answer: "Asia"
+  },
+  {
+    question: "What is the national sport of Japan? (Q358)",
+    options: ["Sumo Wrestling", "Karate", "Judo"],
+    answer: "Sumo Wrestling"
+  },
+  {
+    question: "Who wrote the famous book 'Gitanjali'? (Q359)",
+    options: ["Rabindranath Tagore", "Bankim Chandra", "Munshi Premchand"],
+    answer: "Rabindranath Tagore"
+  },
+  {
+    question: "What is the smallest prime number? (Q360)",
+    options: ["2", "1", "3"],
+    answer: "2"
+  },
+  {
+    question: "Which planet has the largest number of moons? (Q361)",
+    options: ["Saturn", "Jupiter", "Neptune"],
+    answer: "Saturn"
+  },
+  {
+    question: "What is the full form of HTTP? (Q362)",
+    options: ["HyperText Transfer Protocol", "HyperText Transmission Protocol", "HighText Transfer Protocol"],
+    answer: "HyperText Transfer Protocol"
+  },
+  {
+    question: "Which is the main source of protein for vegetarians? (Q363)",
+    options: ["Pulses", "Fruits", "Rice"],
+    answer: "Pulses"
+  },
+  {
+    question: "Who invented the light bulb? (Q364)",
+    options: ["Thomas Edison", "Alexander Bell", "Nikola Tesla"],
+    answer: "Thomas Edison"
+  },
+  {
+    question: "What is the chemical symbol for gold? (Q365)",
+    options: ["Au", "Ag", "Gd"],
+    answer: "Au"
+  },
+  {
+    question: "Which Indian city is known as the City of Pearls? (Q366)",
+    options: ["Hyderabad", "Mumbai", "Chennai"],
+    answer: "Hyderabad"
+  },
+  {
+    question: "Which state is famous for the Gir National Park? (Q367)",
+    options: ["Gujarat", "Madhya Pradesh", "Maharashtra"],
+    answer: "Gujarat"
+  },
+  {
+    question: "Which is the oldest language in the world? (Q368)",
+    options: ["Tamil", "Sanskrit", "Hebrew"],
+    answer: "Tamil"
+  },
+  {
+    question: "Who was the first woman to win a Nobel Prize in two different fields? (Q369)",
+    options: ["Marie Curie", "Mother Teresa", "Rosalind Franklin"],
+    answer: "Marie Curie"
+  },
+  {
+    question: "Which is the highest railway bridge in the world? (Q370)",
+    options: ["Chenab Bridge", "Millau Viaduct", "Forth Bridge"],
+    answer: "Chenab Bridge"
+  },
+  {
+    question: "What is the process of water cycle called? (Q371)",
+    options: ["Hydrologic Cycle", "Oxygen Cycle", "Nitrogen Cycle"],
+    answer: "Hydrologic Cycle"
+  },
+  {
+    question: "Which Indian state is famous for Kaziranga National Park? (Q372)",
+    options: ["Assam", "Meghalaya", "Tripura"],
+    answer: "Assam"
+  },
+  {
+    question: "Which Indian leader was also a lawyer? (Q373)",
+    options: ["Mahatma Gandhi", "Lal Bahadur Shastri", "Rajendra Prasad"],
+    answer: "Mahatma Gandhi"
+  },
+  {
+    question: "What is the deepest ocean in the world? (Q374)",
+    options: ["Pacific Ocean", "Atlantic Ocean", "Indian Ocean"],
+    answer: "Pacific Ocean"
+  },
+  {
+    question: "Which bird can fly backward? (Q375)",
+    options: ["Hummingbird", "Parrot", "Eagle"],
+    answer: "Hummingbird"
+  },
+  {
+    question: "Which gas do plants use for photosynthesis? (Q376)",
+    options: ["Carbon Dioxide", "Oxygen", "Nitrogen"],
+    answer: "Carbon Dioxide"
+  },
+  {
+    question: "Which Indian state is known as the Land of Five Rivers? (Q377)",
+    options: ["Punjab", "Haryana", "Bihar"],
+    answer: "Punjab"
+  },
+  {
+    question: "Who was the first Indian to receive a Nobel Prize? (Q378)",
+    options: ["Rabindranath Tagore", "C.V. Raman", "Mother Teresa"],
+    answer: "Rabindranath Tagore"
+  },
+  {
+    question: "What is the chemical symbol for Sodium? (Q379)",
+    options: ["Na", "S", "So"],
+    answer: "Na"
+  },
+  {
+    question: "What is the national heritage animal of India? (Q380)",
+    options: ["Elephant", "Lion", "Tiger"],
+    answer: "Elephant"
+  },
+  {
+    question: "Which organ helps in breathing? (Q381)",
+    options: ["Lungs", "Liver", "Heart"],
+    answer: "Lungs"
+  },
+  {
+    question: "Which river is called the 'Sorrow of Bengal'? (Q382)",
+    options: ["Damodar", "Ganga", "Yamuna"],
+    answer: "Damodar"
+  },
+  {
+    question: "Which country is known as the Land of a Thousand Lakes? (Q383)",
+    options: ["Finland", "Canada", "Sweden"],
+    answer: "Finland"
+  },
+  {
+    question: "Which planet is famous for its big red spot? (Q384)",
+    options: ["Jupiter", "Mars", "Saturn"],
+    answer: "Jupiter"
+  },
+  {
+    question: "Which is the longest national highway in India? (Q385)",
+    options: ["NH 44", "NH 7", "NH 1"],
+    answer: "NH 44"
+  },
+  {
+    question: "Which is the largest bay in the world? (Q386)",
+    options: ["Bay of Bengal", "Hudson Bay", "San Francisco Bay"],
+    answer: "Bay of Bengal"
+  },
+  {
+    question: "What is the capital of Maldives? (Q387)",
+    options: ["Malé", "Colombo", "Victoria"],
+    answer: "Malé"
+  },
+  {
+    question: "Who discovered the law of gravity? (Q388)",
+    options: ["Isaac Newton", "Albert Einstein", "Galileo"],
+    answer: "Isaac Newton"
+  },
+  {
+    question: "Which part of the human body contains the smallest bone? (Q389)",
+    options: ["Ear", "Hand", "Foot"],
+    answer: "Ear"
+  },
+  {
+    question: "Which state is famous for the dance form Kathakali? (Q390)",
+    options: ["Kerala", "Tamil Nadu", "Andhra Pradesh"],
+    answer: "Kerala"
+  },
+  {
+    question: "Which Indian festival is associated with kites? (Q391)",
+    options: ["Makar Sankranti", "Diwali", "Raksha Bandhan"],
+    answer: "Makar Sankranti"
+  },
+  {
+    question: "Which river flows through Paris? (Q392)",
+    options: ["Seine", "Thames", "Danube"],
+    answer: "Seine"
+  },
+  {
+    question: "Which is the tallest animal on Earth? (Q393)",
+    options: ["Giraffe", "Elephant", "Camel"],
+    answer: "Giraffe"
+  },
+  {
+    question: "What is the full form of SIM? (Q394)",
+    options: ["Subscriber Identity Module", "Simple Identity Method", "Subscriber Internet Mode"],
+    answer: "Subscriber Identity Module"
+  },
+  {
+    question: "What is the chemical symbol of Oxygen? (Q395)",
+    options: ["O", "Ox", "Og"],
+    answer: "O"
+  },
+  {
+    question: "Which mountain range separates Europe and Asia? (Q396)",
+    options: ["Ural Mountains", "Alps", "Himalayas"],
+    answer: "Ural Mountains"
+  },
+  {
+    question: "Which vitamin is essential for blood clotting? (Q397)",
+    options: ["Vitamin K", "Vitamin A", "Vitamin C"],
+    answer: "Vitamin K"
+  },
+  {
+    question: "Which Indian freedom fighter is known for the slogan 'Inquilab Zindabad'? (Q398)",
+    options: ["Bhagat Singh", "Subhas Chandra Bose", "Lala Lajpat Rai"],
+    answer: "Bhagat Singh"
+  },
+  {
+    question: "What is the unit of measurement for sound? (Q399)",
+    options: ["Decibel", "Hertz", "Ampere"],
+    answer: "Decibel"
+  },
+  {
+    question: "Which metal is liquid at room temperature? (Q400)",
+    options: ["Mercury", "Lead", "Zinc"],
+    answer: "Mercury"
+  },
+  {
+    question: "Which gas do humans need to breathe? (Q401)",
+    options: ["Oxygen", "Carbon Dioxide", "Nitrogen"],
+    answer: "Oxygen"
+  },
+  {
+    question: "Which organ filters blood in the human body? (Q402)",
+    options: ["Kidney", "Heart", "Liver"],
+    answer: "Kidney"
+  },
+  {
+    question: "Which Indian state is known as the 'Fruit Bowl of India'? (Q403)",
+    options: ["Himachal Pradesh", "Uttarakhand", "Jammu & Kashmir"],
+    answer: "Himachal Pradesh"
+  },
+  {
+    question: "What is the capital of Italy? (Q404)",
+    options: ["Rome", "Venice", "Milan"],
+    answer: "Rome"
+  },
+  {
+    question: "What is the freezing point of water? (Q405)",
+    options: ["0°C", "10°C", "32°C"],
+    answer: "0°C"
+  },
+  {
+    question: "Which Indian state is known for 'Cherai Beach'? (Q406)",
+    options: ["Kerala", "Goa", "Tamil Nadu"],
+    answer: "Kerala"
+  },
+  {
+    question: "Which scientist developed the theory of relativity? (Q407)",
+    options: ["Albert Einstein", "Isaac Newton", "Galileo"],
+    answer: "Albert Einstein"
+  },
+  {
+    question: "Which bird is the national bird of India? (Q408)",
+    options: ["Peacock", "Parrot", "Swan"],
+    answer: "Peacock"
+  },
+  {
+    question: "What is the capital of Germany? (Q409)",
+    options: ["Berlin", "Munich", "Frankfurt"],
+    answer: "Berlin"
+  },
+  {
+    question: "What is the chemical formula for water? (Q410)",
+    options: ["H2O", "O2", "CO2"],
+    answer: "H2O"
+  },
+  {
+    question: "What is the largest planet in our solar system? (Q411)",
+    options: ["Jupiter", "Saturn", "Earth"],
+    answer: "Jupiter"
+  },
+  {
+    question: "Which country hosted the 2020 Olympics? (Q412)",
+    options: ["Japan", "China", "Brazil"],
+    answer: "Japan"
+  },
+  {
+    question: "Which is the largest continent by area? (Q413)",
+    options: ["Asia", "Africa", "Europe"],
+    answer: "Asia"
+  },
+  {
+    question: "Which fruit is known as the 'King of Fruits'? (Q414)",
+    options: ["Mango", "Apple", "Banana"],
+    answer: "Mango"
+  },
+  {
+    question: "Who was the first President of independent India? (Q415)",
+    options: ["Dr. Rajendra Prasad", "Jawaharlal Nehru", "Sardar Patel"],
+    answer: "Dr. Rajendra Prasad"
+  },
+  {
+    question: "What is the smallest continent? (Q416)",
+    options: ["Australia", "Europe", "Antarctica"],
+    answer: "Australia"
+  },
+  {
+    question: "What is the capital of Canada? (Q417)",
+    options: ["Ottawa", "Toronto", "Vancouver"],
+    answer: "Ottawa"
+  },
+  {
+    question: "Which Indian state is famous for Bhangra dance? (Q418)",
+    options: ["Punjab", "Haryana", "Uttar Pradesh"],
+    answer: "Punjab"
+  },
+  {
+    question: "Who is known as the 'Missile Man of India'? (Q419)",
+    options: ["A.P.J. Abdul Kalam", "Vikram Sarabhai", "Homi Bhabha"],
+    answer: "A.P.J. Abdul Kalam"
+  },
+  {
+    question: "Which body part has the strongest muscle? (Q420)",
+    options: ["Jaw", "Leg", "Arm"],
+    answer: "Jaw"
+  },
+  {
+    question: "Which is the smallest ocean in the world? (Q421)",
+    options: ["Arctic Ocean", "Indian Ocean", "Atlantic Ocean"],
+    answer: "Arctic Ocean"
+  },
+  {
+    question: "Which is the tallest building in the world? (Q422)",
+    options: ["Burj Khalifa", "Shanghai Tower", "One World Trade Center"],
+    answer: "Burj Khalifa"
+  },
+  {
+    question: "Which Indian state is called the 'Land of Rising Sun'? (Q423)",
+    options: ["Arunachal Pradesh", "Sikkim", "Nagaland"],
+    answer: "Arunachal Pradesh"
+  },
+  {
+    question: "Which country is famous for Eiffel Tower? (Q424)",
+    options: ["France", "Italy", "Spain"],
+    answer: "France"
+  },
+  {
+    question: "Which vitamin is also known as ascorbic acid? (Q425)",
+    options: ["Vitamin C", "Vitamin A", "Vitamin D"],
+    answer: "Vitamin C"
+  },
+  {
+    question: "What is the name of our galaxy? (Q426)",
+    options: ["Milky Way", "Andromeda", "Messier 81"],
+    answer: "Milky Way"
+  },
+  {
+    question: "Which city is known as the Pink City of India? (Q427)",
+    options: ["Jaipur", "Jodhpur", "Bikaner"],
+    answer: "Jaipur"
+  },
+  {
+    question: "Which country is known as the Land of the Rising Sun? (Q428)",
+    options: ["Japan", "China", "South Korea"],
+    answer: "Japan"
+  },
+  {
+    question: "What is the capital of Australia? (Q429)",
+    options: ["Canberra", "Sydney", "Melbourne"],
+    answer: "Canberra"
+  },
+  {
+    question: "Which gas is known as marsh gas? (Q430)",
+    options: ["Methane", "Propane", "Butane"],
+    answer: "Methane"
+  },
+  {
+    question: "Which country gifted the Statue of Liberty to the USA? (Q431)",
+    options: ["France", "UK", "Canada"],
+    answer: "France"
+  },
+  {
+    question: "Who is the author of 'Harry Potter' series? (Q432)",
+    options: ["J.K. Rowling", "Stephen King", "Roald Dahl"],
+    answer: "J.K. Rowling"
+  },
+  {
+    question: "What is the hardest natural substance? (Q433)",
+    options: ["Diamond", "Gold", "Iron"],
+    answer: "Diamond"
+  },
+  {
+    question: "Which Indian festival is known as the Festival of Lights? (Q434)",
+    options: ["Diwali", "Holi", "Navratri"],
+    answer: "Diwali"
+  },
+  {
+    question: "What is the full form of PDF? (Q435)",
+    options: ["Portable Document Format", "Public Display File", "Printable Data File"],
+    answer: "Portable Document Format"
+  },
+  {
+    question: "Which animal is known as the 'Ship of the Desert'? (Q436)",
+    options: ["Camel", "Elephant", "Horse"],
+    answer: "Camel"
+  },
+  {
+    question: "Who wrote the play 'Romeo and Juliet'? (Q437)",
+    options: ["William Shakespeare", "Charles Dickens", "Leo Tolstoy"],
+    answer: "William Shakespeare"
+  },
+  {
+    question: "What is the national fruit of India? (Q438)",
+    options: ["Mango", "Banana", "Apple"],
+    answer: "Mango"
+  },
+  {
+    question: "Which animal is known for its memory and intelligence? (Q439)",
+    options: ["Elephant", "Dog", "Cat"],
+    answer: "Elephant"
+  },
+  {
+    question: "Which city is known as the Silicon Valley of India? (Q440)",
+    options: ["Bangalore", "Hyderabad", "Pune"],
+    answer: "Bangalore"
+  },
+  {
+    question: "Which river is known as the 'Lifeline of Egypt'? (Q441)",
+    options: ["Nile", "Amazon", "Ganga"],
+    answer: "Nile"
+  },
+  {
+    question: "Which Indian leader is called the 'Iron Man of India'? (Q442)",
+    options: ["Sardar Vallabhbhai Patel", "Jawaharlal Nehru", "Subhas Chandra Bose"],
+    answer: "Sardar Vallabhbhai Patel"
+  },
+  {
+    question: "Which planet is known for its rings? (Q443)",
+    options: ["Saturn", "Jupiter", "Uranus"],
+    answer: "Saturn"
+  },
+  {
+    question: "What is the chemical formula for carbon dioxide? (Q444)",
+    options: ["CO₂", "C₂O", "CO"],
+    answer: "CO₂"
+  },
+  {
+    question: "What is the national flower of India? (Q445)",
+    options: ["Lotus", "Rose", "Sunflower"],
+    answer: "Lotus"
+  },
+  {
+    question: "Which bird is known as the fastest bird in the world? (Q446)",
+    options: ["Peregrine Falcon", "Eagle", "Hawk"],
+    answer: "Peregrine Falcon"
+  },
+  {
+    question: "Who was the first man to walk on the Moon? (Q447)",
+    options: ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin"],
+    answer: "Neil Armstrong"
+  },
+  {
+    question: "What is the process of converting water vapor into liquid called? (Q448)",
+    options: ["Condensation", "Evaporation", "Sublimation"],
+    answer: "Condensation"
+  },
+  {
+    question: "Which is the longest bone in the human body? (Q449)",
+    options: ["Femur", "Tibia", "Humerus"],
+    answer: "Femur"
+  },
+  {
+    question: "What is the currency of Russia? (Q450)",
+    options: ["Ruble", "Euro", "Dollar"],
+    answer: "Ruble"
+  },
+
       {
     question: "Which Indian city is known as the City of Pearls? (Q451)",
     options: ["Hyderabad", "Mumbai", "Chennai"],
