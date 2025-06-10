@@ -498,5 +498,255 @@
     question: "Which Indian state is famous for tea plantations? (Q100)",
     options: ["Assam", "Sikkim", "Kerala"],
     answer: "Assam"
-  }
+  },
+      {
+    question: "Which planet is known as the hottest planet in the solar system? (Q101)",
+    options: ["Mercury", "Venus", "Mars"],
+    answer: "Venus"
+  },
+  {
+    question: "Which Indian city is called the City of Lakes? (Q102)",
+    options: ["Udaipur", "Bhopal", "Nainital"],
+    answer: "Udaipur"
+  },
+  {
+    question: "What is the capital of South Korea? (Q103)",
+    options: ["Seoul", "Busan", "Incheon"],
+    answer: "Seoul"
+  },
+  {
+    question: "Who was the first Indian to win a Nobel Prize? (Q104)",
+    options: ["Rabindranath Tagore", "C.V. Raman", "Mother Teresa"],
+    answer: "Rabindranath Tagore"
+  },
+  {
+    question: "Which element has the atomic number 1? (Q105)",
+    options: ["Hydrogen", "Oxygen", "Carbon"],
+    answer: "Hydrogen"
+  },
+  {
+    question: "Which sport is known as the 'King of Sports'? (Q106)",
+    options: ["Football", "Cricket", "Tennis"],
+    answer: "Football"
+  },
+  {
+    question: "Which country is famous for tulips? (Q107)",
+    options: ["Netherlands", "France", "Germany"],
+    answer: "Netherlands"
+  },
+  {
+    question: "Which part of the plant conducts photosynthesis? (Q108)",
+    options: ["Leaf", "Root", "Stem"],
+    answer: "Leaf"
+  },
+  {
+    question: "What is the longest river in India? (Q109)",
+    options: ["Ganga", "Yamuna", "Godavari"],
+    answer: "Ganga"
+  },
+  {
+    question: "Which gas is most used in balloons? (Q110)",
+    options: ["Helium", "Hydrogen", "Nitrogen"],
+    answer: "Helium"
+  },
+  {
+    question: "Which country has the largest population? (Q111)",
+    options: ["India", "China", "USA"],
+    answer: "India"
+  },
+  {
+    question: "What is the name of the galaxy we live in? (Q112)",
+    options: ["Milky Way", "Andromeda", "Sombrero"],
+    answer: "Milky Way"
+  },
+  {
+    question: "Which muscle is responsible for pumping blood? (Q113)",
+    options: ["Heart", "Lungs", "Liver"],
+    answer: "Heart"
+  },
+  {
+    question: "What is the capital of Rajasthan? (Q114)",
+    options: ["Jaipur", "Udaipur", "Jodhpur"],
+    answer: "Jaipur"
+  },
+  {
+    question: "Which country is known for kangaroos? (Q115)",
+    options: ["Australia", "South Africa", "Brazil"],
+    answer: "Australia"
+  },
+  {
+    question: "Which day is celebrated as International Yoga Day? (Q116)",
+    options: ["June 21", "May 5", "August 15"],
+    answer: "June 21"
+  },
+  {
+    question: "What is the main ingredient in glass? (Q117)",
+    options: ["Sand", "Plastic", "Clay"],
+    answer: "Sand"
+  },
+  {
+    question: "Which blood cells help in clotting? (Q118)",
+    options: ["Platelets", "RBC", "WBC"],
+    answer: "Platelets"
+  },
+  {
+    question: "Which Indian state is called the Land of Rising Sun? (Q119)",
+    options: ["Arunachal Pradesh", "Assam", "Mizoram"],
+    answer: "Arunachal Pradesh"
+  },
+  {
+    question: "Who is the first Indian to go to space? (Q120)",
+    options: ["Rakesh Sharma", "Kalpana Chawla", "Sunita Williams"],
+    answer: "Rakesh Sharma"
+  },
+  {
+    question: "Which vitamin is good for eyesight? (Q121)",
+    options: ["Vitamin A", "Vitamin B", "Vitamin C"],
+    answer: "Vitamin A"
+  },
+  {
+    question: "Which Indian monument is called the 'Symbol of Love'? (Q122)",
+    options: ["Taj Mahal", "Red Fort", "Qutub Minar"],
+    answer: "Taj Mahal"
+  },
+  {
+    question: "Which is the coldest planet in the solar system? (Q123)",
+    options: ["Neptune", "Uranus", "Pluto"],
+    answer: "Neptune"
+  },
+  {
+    question: "What is the largest island in the world? (Q124)",
+    options: ["Greenland", "Australia", "Borneo"],
+    answer: "Greenland"
+  },
+  {
+    question: "Who invented the telephone? (Q125)",
+    options: ["Alexander Graham Bell", "Edison", "Tesla"],
+    answer: "Alexander Graham Bell"
+  },
+  {
+    question: "Which bird lays the largest egg? (Q126)",
+    options: ["Ostrich", "Eagle", "Duck"],
+    answer: "Ostrich"
+  },
+  {
+    question: "What is the capital of West Bengal? (Q127)",
+    options: ["Kolkata", "Howrah", "Durgapur"],
+    answer: "Kolkata"
+  },
+  {
+    question: "Which animal is known for its memory? (Q128)",
+    options: ["Elephant", "Horse", "Cat"],
+    answer: "Elephant"
+  },
+  {
+    question: "Which ocean is on the west coast of India? (Q129)",
+    options: ["Arabian Sea", "Bay of Bengal", "Indian Ocean"],
+    answer: "Arabian Sea"
+  },
+  {
+    question: "Who painted the Mona Lisa? (Q130)",
+    options: ["Leonardo da Vinci", "Michelangelo", "Van Gogh"],
+    answer: "Leonardo da Vinci"
+  },
+  {
+    question: "Which Indian state is famous for backwaters? (Q131)",
+    options: ["Kerala", "Goa", "Tamil Nadu"],
+    answer: "Kerala"
+  },
+  {
+    question: "Who discovered America? (Q132)",
+    options: ["Christopher Columbus", "Magellan", "Marco Polo"],
+    answer: "Christopher Columbus"
+  },
+  {
+    question: "Which is the fastest land animal? (Q133)",
+    options: ["Cheetah", "Leopard", "Tiger"],
+    answer: "Cheetah"
+  },
+  {
+    question: "Which city is called the 'City of Joy'? (Q134)",
+    options: ["Kolkata", "Mumbai", "Delhi"],
+    answer: "Kolkata"
+  },
+  {
+    question: "Which Indian festival is known for lights and crackers? (Q135)",
+    options: ["Diwali", "Holi", "Navratri"],
+    answer: "Diwali"
+  },
+  {
+    question: "Which country is known for pyramids? (Q136)",
+    options: ["Egypt", "Greece", "Italy"],
+    answer: "Egypt"
+  },
+  {
+    question: "Who is the first woman Prime Minister of India? (Q137)",
+    options: ["Indira Gandhi", "Sonia Gandhi", "Pratibha Patil"],
+    answer: "Indira Gandhi"
+  },
+  {
+    question: "Which part of the brain controls thinking? (Q138)",
+    options: ["Cerebrum", "Cerebellum", "Medulla"],
+    answer: "Cerebrum"
+  },
+  {
+    question: "Which country has the maple leaf on its flag? (Q139)",
+    options: ["Canada", "USA", "UK"],
+    answer: "Canada"
+  },
+  {
+    question: "Which is the largest dam in India? (Q140)",
+    options: ["Bhakra Nangal", "Hirakud", "Tehri"],
+    answer: "Bhakra Nangal"
+  },
+  {
+    question: "Which country is called the Land of Thunder Dragon? (Q141)",
+    options: ["Bhutan", "Nepal", "Tibet"],
+    answer: "Bhutan"
+  },
+  {
+    question: "What is the process of water turning into vapor called? (Q142)",
+    options: ["Evaporation", "Condensation", "Freezing"],
+    answer: "Evaporation"
+  },
+  {
+    question: "Which is the tallest animal in the world? (Q143)",
+    options: ["Giraffe", "Elephant", "Camel"],
+    answer: "Giraffe"
+  },
+  {
+    question: "What is the national tree of India? (Q144)",
+    options: ["Banyan", "Peepal", "Neem"],
+    answer: "Banyan"
+  },
+  {
+    question: "What is the study of weather called? (Q145)",
+    options: ["Meteorology", "Astronomy", "Geology"],
+    answer: "Meteorology"
+  },
+  {
+    question: "Which animal is called the Ship of the Desert? (Q146)",
+    options: ["Camel", "Horse", "Elephant"],
+    answer: "Camel"
+  },
+  {
+    question: "What is the capital of Canada? (Q147)",
+    options: ["Ottawa", "Toronto", "Vancouver"],
+    answer: "Ottawa"
+  },
+  {
+    question: "Which instrument is used to measure temperature? (Q148)",
+    options: ["Thermometer", "Barometer", "Seismometer"],
+    answer: "Thermometer"
+  },
+  {
+    question: "What is the full form of ATM? (Q149)",
+    options: ["Automated Teller Machine", "Auto Transfer Machine", "Any Time Money"],
+    answer: "Automated Teller Machine"
+  },
+  {
+    question: "What is the largest mammal in the world? (Q150)",
+    options: ["Blue Whale", "Elephant", "Shark"],
+    answer: "Blue Whale"
+  },
 ];
