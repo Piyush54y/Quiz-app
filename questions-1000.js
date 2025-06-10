@@ -1,251 +1,251 @@
-const questions = [
   {
-    question: "What is the capital of India? (Q1)",
-    options: ["Mumbai", "Delhi", "Kolkata"],
-    answer: "Delhi"
+    question: "Which country is known as the Land of the Rising Sun? (Q51)",
+    options: ["Japan", "China", "South Korea"],
+    answer: "Japan"
   },
   {
-    question: "What is the capital of France? (Q2)",
-    options: ["Paris", "Berlin", "Madrid"],
-    answer: "Paris"
+    question: "What is the chemical symbol for water? (Q52)",
+    options: ["H2O", "O2", "CO2"],
+    answer: "H2O"
   },
   {
-    question: "Which planet is known as the Red Planet? (Q3)",
-    options: ["Mars", "Earth", "Saturn"],
-    answer: "Mars"
+    question: "Which continent is the largest by area? (Q53)",
+    options: ["Asia", "Africa", "North America"],
+    answer: "Asia"
   },
   {
-    question: "Who wrote '1984'? (Q4)",
-    options: ["George Orwell", "J.K. Rowling", "Jane Austen"],
-    answer: "George Orwell"
+    question: "What is the boiling point of water at sea level? (Q54)",
+    options: ["100°C", "90°C", "120°C"],
+    answer: "100°C"
   },
   {
-    question: "What is the square root of 64? (Q5)",
-    options: ["8", "6", "9"],
-    answer: "8"
+    question: "Which Indian festival is known as the Festival of Lights? (Q55)",
+    options: ["Holi", "Diwali", "Navratri"],
+    answer: "Diwali"
   },
   {
-    question: "In which year did India gain independence? (Q6)",
-    options: ["1947", "1950", "1930"],
-    answer: "1947"
+    question: "Which ocean is the deepest? (Q56)",
+    options: ["Pacific", "Atlantic", "Indian"],
+    answer: "Pacific"
   },
   {
-    question: "Who is known as the father of Physics? (Q7)",
-    options: ["Isaac Newton", "Albert Einstein", "Galileo Galilei"],
-    answer: "Isaac Newton"
+    question: "Who invented the airplane? (Q57)",
+    options: ["Wright Brothers", "Henry Ford", "Thomas Edison"],
+    answer: "Wright Brothers"
   },
   {
-    question: "What is the capital of Japan? (Q8)",
-    options: ["Tokyo", "Kyoto", "Osaka"],
-    answer: "Tokyo"
+    question: "What is the currency of the United Kingdom? (Q58)",
+    options: ["Pound Sterling", "Euro", "Dollar"],
+    answer: "Pound Sterling"
   },
   {
-    question: "Which planet is known as the Blue Planet? (Q9)",
-    options: ["Earth", "Uranus", "Venus"],
-    answer: "Earth"
+    question: "Which bird is known for its ability to mimic human speech? (Q59)",
+    options: ["Parrot", "Crow", "Sparrow"],
+    answer: "Parrot"
   },
   {
-    question: "Who wrote 'Hamlet'? (Q10)",
-    options: ["William Shakespeare", "Leo Tolstoy", "George Orwell"],
-    answer: "William Shakespeare"
+    question: "What is the primary language spoken in Brazil? (Q60)",
+    options: ["Portuguese", "Spanish", "French"],
+    answer: "Portuguese"
   },
   {
-    question: "What is the square root of 100? (Q11)",
-    options: ["10", "9", "8"],
-    answer: "10"
+    question: "Which Indian state is known as the 'Spice Garden of India'? (Q61)",
+    options: ["Kerala", "Tamil Nadu", "Assam"],
+    answer: "Kerala"
   },
   {
-    question: "In which year did USA gain independence? (Q12)",
-    options: ["1776", "1789", "1800"],
-    answer: "1776"
+    question: "What is the smallest planet in the solar system? (Q62)",
+    options: ["Mercury", "Mars", "Pluto"],
+    answer: "Mercury"
   },
   {
-    question: "Who is known as the father of Computer Science? (Q13)",
-    options: ["Charles Babbage", "Alan Turing", "Bill Gates"],
-    answer: "Charles Babbage"
+    question: "Who discovered penicillin? (Q63)",
+    options: ["Alexander Fleming", "Louis Pasteur", "Marie Curie"],
+    answer: "Alexander Fleming"
   },
   {
-    question: "What is the capital of Brazil? (Q14)",
-    options: ["Rio", "Brasília", "São Paulo"],
-    answer: "Brasília"
+    question: "What is the national flower of India? (Q64)",
+    options: ["Lotus", "Rose", "Marigold"],
+    answer: "Lotus"
   },
   {
-    question: "Which planet is known as the Ringed Planet? (Q15)",
-    options: ["Saturn", "Jupiter", "Uranus"],
-    answer: "Saturn"
-  },
-  {
-    question: "Who wrote 'The Alchemist'? (Q16)",
-    options: ["Paulo Coelho", "George Orwell", "Chetan Bhagat"],
-    answer: "Paulo Coelho"
-  },
-  {
-    question: "What is the square root of 81? (Q17)",
-    options: ["9", "8", "10"],
-    answer: "9"
-  },
-  {
-    question: "In which year did Bangladesh gain independence? (Q18)",
-    options: ["1971", "1965", "1952"],
-    answer: "1971"
-  },
-  {
-    question: "Who is known as the father of Modern Chemistry? (Q19)",
-    options: ["Antoine Lavoisier", "Robert Boyle", "Dmitri Mendeleev"],
-    answer: "Antoine Lavoisier"
-  },
-  {
-    question: "What is the capital of Australia? (Q20)",
-    options: ["Sydney", "Melbourne", "Canberra"],
-    answer: "Canberra"
-  },
-  {
-    question: "Which planet is known as the Morning Star? (Q21)",
-    options: ["Venus", "Mars", "Neptune"],
-    answer: "Venus"
-  },
-  {
-    question: "Who wrote 'Pride and Prejudice'? (Q22)",
-    options: ["Jane Austen", "J.K. Rowling", "Emily Brontë"],
-    answer: "Jane Austen"
-  },
-  {
-    question: "What is the square root of 49? (Q23)",
-    options: ["7", "6", "8"],
-    answer: "7"
-  },
-  {
-    question: "In which year did Nigeria gain independence? (Q24)",
-    options: ["1960", "1975", "1980"],
-    answer: "1960"
-  },
-  {
-    question: "Who is known as the father of Biology? (Q25)",
-    options: ["Aristotle", "Darwin", "Pasteur"],
-    answer: "Aristotle"
-  },
-  {
-    question: "What is the capital of Germany? (Q26)",
-    options: ["Berlin", "Munich", "Frankfurt"],
-    answer: "Berlin"
-  },
-  {
-    question: "Which planet is known as the Giant Planet? (Q27)",
-    options: ["Jupiter", "Saturn", "Uranus"],
-    answer: "Jupiter"
-  },
-  {
-    question: "Who wrote 'Animal Farm'? (Q28)",
-    options: ["George Orwell", "Leo Tolstoy", "Mark Twain"],
-    answer: "George Orwell"
-  },
-  {
-    question: "What is the square root of 36? (Q29)",
-    options: ["6", "5", "7"],
-    answer: "6"
-  },
-  {
-    question: "In which year did Pakistan gain independence? (Q30)",
-    options: ["1947", "1948", "1956"],
-    answer: "1947"
-  },
-  {
-    question: "Who is known as the father of Mathematics? (Q31)",
-    options: ["Archimedes", "Euclid", "Pythagoras"],
-    answer: "Archimedes"
-  },
-  {
-    question: "What is the capital of Canada? (Q32)",
-    options: ["Ottawa", "Toronto", "Montreal"],
-    answer: "Ottawa"
-  },
-  {
-    question: "Who is known as the father of Modern Chemistry? (Q33)",
-    options: ["Antoine Lavoisier", "Robert Boyle", "Mendeleev"],
-    answer: "Antoine Lavoisier"
-  },
-  {
-    question: "What is the square root of 25? (Q34)",
-    options: ["5", "6", "4"],
-    answer: "5"
-  },
-  {
-    question: "Who wrote 'Animal Farm'? (Q35)",
-    options: ["George Orwell", "Ernest Hemingway", "Agatha Christie"],
-    answer: "George Orwell"
-  },
-  {
-    question: "Which planet is known as the Evening Star? (Q36)",
-    options: ["Venus", "Mercury", "Saturn"],
-    answer: "Venus"
-  },
-  {
-    question: "What is the capital of Italy? (Q37)",
-    options: ["Rome", "Venice", "Milan"],
-    answer: "Rome"
-  },
-  {
-    question: "In which year did South Africa gain independence? (Q38)",
-    options: ["1994", "1990", "1980"],
-    answer: "1994"
-  },
-  {
-    question: "Who is known as the father of Modern Physics? (Q39)",
-    options: ["Albert Einstein", "Newton", "Galileo"],
-    answer: "Albert Einstein"
-  },
-  {
-    question: "What is the capital of Russia? (Q40)",
-    options: ["Moscow", "Saint Petersburg", "Kazan"],
-    answer: "Moscow"
-  },
-  {
-    question: "What is the square root of 16? (Q41)",
-    options: ["4", "5", "6"],
-    answer: "4"
-  },
-  {
-    question: "Which planet is known as the Cold Planet? (Q42)",
-    options: ["Uranus", "Neptune", "Pluto"],
+    question: "Which planet is farthest from the Sun? (Q65)",
+    options: ["Neptune", "Uranus", "Pluto"],
     answer: "Neptune"
   },
   {
-    question: "Who wrote '1984'? (Q43)",
-    options: ["George Orwell", "H.G. Wells", "Aldous Huxley"],
-    answer: "George Orwell"
+    question: "Which gas is used for respiration by humans? (Q66)",
+    options: ["Oxygen", "Nitrogen", "Carbon Dioxide"],
+    answer: "Oxygen"
   },
   {
-    question: "What is the capital of China? (Q44)",
-    options: ["Beijing", "Shanghai", "Shenzhen"],
-    answer: "Beijing"
+    question: "Who invented the World Wide Web? (Q67)",
+    options: ["Tim Berners-Lee", "Bill Gates", "Steve Jobs"],
+    answer: "Tim Berners-Lee"
   },
   {
-    question: "Who is known as the father of Biology? (Q45)",
-    options: ["Aristotle", "Darwin", "Newton"],
-    answer: "Aristotle"
+    question: "What is the national animal of India? (Q68)",
+    options: ["Tiger", "Lion", "Elephant"],
+    answer: "Tiger"
   },
   {
-    question: "What is the square root of 121? (Q46)",
-    options: ["11", "10", "12"],
-    answer: "11"
+    question: "Which vitamin is produced by sunlight in the human body? (Q69)",
+    options: ["Vitamin D", "Vitamin C", "Vitamin A"],
+    answer: "Vitamin D"
   },
   {
-    question: "In which year did Germany reunify? (Q47)",
-    options: ["1990", "1989", "1991"],
-    answer: "1990"
+    question: "What is the largest bone in the human body? (Q70)",
+    options: ["Femur", "Tibia", "Humerus"],
+    answer: "Femur"
   },
   {
-    question: "Which planet has the most moons? (Q48)",
-    options: ["Saturn", "Jupiter", "Neptune"],
-    answer: "Saturn"
+    question: "Who is known as the Missile Man of India? (Q71)",
+    options: ["Dr. A.P.J. Abdul Kalam", "Vikram Sarabhai", "Homi Bhabha"],
+    answer: "Dr. A.P.J. Abdul Kalam"
   },
   {
-    question: "Who wrote 'Pride and Prejudice'? (Q49)",
-    options: ["Jane Austen", "Emily Brontë", "Agatha Christie"],
-    answer: "Jane Austen"
+    question: "What is the capital city of Nepal? (Q72)",
+    options: ["Kathmandu", "Pokhara", "Lalitpur"],
+    answer: "Kathmandu"
   },
   {
-    question: "What is the capital of the United Kingdom? (Q50)",
-    options: ["London", "Manchester", "Edinburgh"],
-    answer: "London"
+    question: "Which organ in the human body is responsible for pumping blood? (Q73)",
+    options: ["Heart", "Lungs", "Liver"],
+    answer: "Heart"
   },
+  {
+    question: "Which planet is known for having a Great Red Spot? (Q74)",
+    options: ["Jupiter", "Saturn", "Mars"],
+    answer: "Jupiter"
+  },
+  {
+    question: "Which river is the longest in the world? (Q75)",
+    options: ["Nile", "Amazon", "Yangtze"],
+    answer: "Nile"
+  },
+  {
+    question: "What is the national bird of India? (Q76)",
+    options: ["Peacock", "Parrot", "Eagle"],
+    answer: "Peacock"
+  },
+  {
+    question: "Which Indian leader is known as the Iron Man of India? (Q77)",
+    options: ["Sardar Vallabhbhai Patel", "Jawaharlal Nehru", "B.R. Ambedkar"],
+    answer: "Sardar Vallabhbhai Patel"
+  },
+  {
+    question: "Which vitamin helps in blood clotting? (Q78)",
+    options: ["Vitamin K", "Vitamin A", "Vitamin B"],
+    answer: "Vitamin K"
+  },
+  {
+    question: "Which is the largest country in the world by area? (Q79)",
+    options: ["Russia", "Canada", "USA"],
+    answer: "Russia"
+  },
+  {
+    question: "Which is the most spoken language in the world? (Q80)",
+    options: ["English", "Mandarin Chinese", "Spanish"],
+    answer: "Mandarin Chinese"
+  },
+  {
+    question: "Which city is known as the Big Apple? (Q81)",
+    options: ["New York", "Chicago", "Los Angeles"],
+    answer: "New York"
+  },
+  {
+    question: "Which Indian festival is celebrated with colors? (Q82)",
+    options: ["Holi", "Diwali", "Dussehra"],
+    answer: "Holi"
+  },
+  {
+    question: "What is the full form of DNA? (Q83)",
+    options: ["Deoxyribonucleic Acid", "Dynamic Network Analysis", "Digital Numeric Access"],
+    answer: "Deoxyribonucleic Acid"
+  },
+  {
+    question: "Who was the first Indian woman in space? (Q84)",
+    options: ["Kalpana Chawla", "Sunita Williams", "Rakesh Sharma"],
+    answer: "Kalpana Chawla"
+  },
+  {
+    question: "What is the capital of Sri Lanka? (Q85)",
+    options: ["Colombo", "Kandy", "Galle"],
+    answer: "Colombo"
+  },
+  {
+    question: "Which metal is liquid at room temperature? (Q86)",
+    options: ["Mercury", "Lead", "Zinc"],
+    answer: "Mercury"
+  },
+  {
+    question: "What is the largest gland in the human body? (Q87)",
+    options: ["Liver", "Pancreas", "Thyroid"],
+    answer: "Liver"
+  },
+  {
+    question: "What does the Richter scale measure? (Q88)",
+    options: ["Earthquakes", "Wind Speed", "Rainfall"],
+    answer: "Earthquakes"
+  },
+  {
+    question: "Which day is celebrated as World Environment Day? (Q89)",
+    options: ["June 5", "April 22", "October 16"],
+    answer: "June 5"
+  },
+  {
+    question: "Who discovered gravity? (Q90)",
+    options: ["Isaac Newton", "Albert Einstein", "Galileo"],
+    answer: "Isaac Newton"
+  },
+  {
+    question: "Which blood group is known as universal donor? (Q91)",
+    options: ["O negative", "A positive", "B negative"],
+    answer: "O negative"
+  },
+  {
+    question: "Which is the tallest mountain in the world? (Q92)",
+    options: ["Mount Everest", "K2", "Kangchenjunga"],
+    answer: "Mount Everest"
+  },
+  {
+    question: "Which Indian state has the longest coastline? (Q93)",
+    options: ["Gujarat", "Andhra Pradesh", "Maharashtra"],
+    answer: "Gujarat"
+  },
+  {
+    question: "Who is the author of 'The Discovery of India'? (Q94)",
+    options: ["Jawaharlal Nehru", "Rabindranath Tagore", "Dr. Ambedkar"],
+    answer: "Jawaharlal Nehru"
+  },
+  {
+    question: "Which festival marks the start of the harvest season in Punjab? (Q95)",
+    options: ["Baisakhi", "Lohri", "Pongal"],
+    answer: "Baisakhi"
+  },
+  {
+    question: "Which river is sacred to Hindus? (Q96)",
+    options: ["Ganga", "Yamuna", "Godavari"],
+    answer: "Ganga"
+  },
+  {
+    question: "Which Indian state is known as the Land of Five Rivers? (Q97)",
+    options: ["Punjab", "Haryana", "Bihar"],
+    answer: "Punjab"
+  },
+  {
+    question: "Which city is known as the Silicon Valley of India? (Q98)",
+    options: ["Bengaluru", "Hyderabad", "Pune"],
+    answer: "Bengaluru"
+  },
+  {
+    question: "Which Mughal emperor built the Taj Mahal? (Q99)",
+    options: ["Shah Jahan", "Akbar", "Aurangzeb"],
+    answer: "Shah Jahan"
+  },
+  {
+    question: "Which Indian state is famous for tea plantations? (Q100)",
+    options: ["Assam", "Sikkim", "Kerala"],
+    answer: "Assam"
+  }
+];
