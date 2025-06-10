@@ -2003,55 +2003,254 @@
     options: ["Ruble", "Euro", "Dollar"],
     answer: "Ruble"
   },
-
-      {
-    question: "Which Indian city is known as the City of Pearls? (Q451)",
-    options: ["Hyderabad", "Mumbai", "Chennai"],
-    answer: "Hyderabad"
+  {
+    question: "Which Indian state is known for the Sundarbans mangrove forest? (Q451)",
+    options: ["West Bengal", "Odisha", "Assam"],
+    answer: "West Bengal"
   },
   {
-    question: "Which state is famous for the Gir National Park? (Q452)",
-    options: ["Gujarat", "Madhya Pradesh", "Maharashtra"],
-    answer: "Gujarat"
+    question: "What is the capital of the United States? (Q452)",
+    options: ["Washington D.C.", "New York", "Los Angeles"],
+    answer: "Washington D.C."
   },
   {
-    question: "Which is the oldest language in the world? (Q453)",
-    options: ["Tamil", "Sanskrit", "Hebrew"],
-    answer: "Tamil"
+    question: "Which Indian cricketer is known as the 'Captain Cool'? (Q453)",
+    options: ["MS Dhoni", "Virat Kohli", "Rohit Sharma"],
+    answer: "MS Dhoni"
   },
   {
-    question: "Who was the first woman to win a Nobel Prize in two different fields? (Q454)",
-    options: ["Marie Curie", "Mother Teresa", "Rosalind Franklin"],
-    answer: "Marie Curie"
+    question: "Which layer of the atmosphere contains the ozone layer? (Q454)",
+    options: ["Stratosphere", "Troposphere", "Mesosphere"],
+    answer: "Stratosphere"
   },
   {
-    question: "Which is the highest railway bridge in the world? (Q455)",
-    options: ["Chenab Bridge", "Millau Viaduct", "Forth Bridge"],
-    answer: "Chenab Bridge"
+    question: "What is the full form of LED? (Q455)",
+    options: ["Light Emitting Diode", "Low Energy Device", "Light Energy Display"],
+    answer: "Light Emitting Diode"
   },
   {
-    question: "What is the process of water cycle called? (Q456)",
-    options: ["Hydrologic Cycle", "Oxygen Cycle", "Nitrogen Cycle"],
-    answer: "Hydrologic Cycle"
+    question: "Which Indian state is famous for the tea gardens of Darjeeling? (Q456)",
+    options: ["West Bengal", "Assam", "Sikkim"],
+    answer: "West Bengal"
   },
   {
-    question: "Which Indian state is famous for Kaziranga National Park? (Q457)",
-    options: ["Assam", "Meghalaya", "Tripura"],
-    answer: "Assam"
+    question: "Which country is known for the Great Wall? (Q457)",
+    options: ["China", "Japan", "South Korea"],
+    answer: "China"
   },
   {
-    question: "Which Indian leader was also a lawyer? (Q458)",
-    options: ["Mahatma Gandhi", "Lal Bahadur Shastri", "Rajendra Prasad"],
+    question: "Who is known as the 'Father of the Nation' in India? (Q458)",
+    options: ["Mahatma Gandhi", "Jawaharlal Nehru", "Subhas Chandra Bose"],
     answer: "Mahatma Gandhi"
   },
   {
-    question: "What is the deepest ocean in the world? (Q459)",
-    options: ["Pacific Ocean", "Atlantic Ocean", "Indian Ocean"],
-    answer: "Pacific Ocean"
+    question: "What is the process of a solid changing directly into a gas? (Q459)",
+    options: ["Sublimation", "Condensation", "Melting"],
+    answer: "Sublimation"
   },
   {
-    question: "Which bird can fly backward? (Q460)",
-    options: ["Hummingbird", "Parrot", "Eagle"],
-    answer: "Hummingbird"
+    question: "Which blood group is known as the universal recipient? (Q460)",
+    options: ["AB+", "O+", "A+"],
+    answer: "AB+"
+  },
+  {
+    question: "Which city is known as the 'City of Nawabs'? (Q461)",
+    options: ["Lucknow", "Hyderabad", "Delhi"],
+    answer: "Lucknow"
+  },
+  {
+    question: "Which is the national calendar of India? (Q462)",
+    options: ["Saka Calendar", "Gregorian Calendar", "Hindu Calendar"],
+    answer: "Saka Calendar"
+  },
+  {
+    question: "Which planet is known as the Red Planet? (Q463)",
+    options: ["Mars", "Jupiter", "Venus"],
+    answer: "Mars"
+  },
+  {
+    question: "What is the capital of Nepal? (Q464)",
+    options: ["Kathmandu", "Pokhara", "Lalitpur"],
+    answer: "Kathmandu"
+  },
+  {
+    question: "What is the boiling point of water in Celsius? (Q465)",
+    options: ["100°C", "90°C", "80°C"],
+    answer: "100°C"
+  },
+  {
+    question: "Which scientist developed the laws of motion? (Q466)",
+    options: ["Isaac Newton", "Galileo", "Einstein"],
+    answer: "Isaac Newton"
+  },
+  {
+    question: "Which metal is most commonly used in electrical wiring? (Q467)",
+    options: ["Copper", "Aluminum", "Silver"],
+    answer: "Copper"
+  },
+  {
+    question: "Who is the first woman to fly in space? (Q468)",
+    options: ["Valentina Tereshkova", "Kalpana Chawla", "Sally Ride"],
+    answer: "Valentina Tereshkova"
+  },
+  {
+    question: "Which Indian festival is celebrated with colors? (Q469)",
+    options: ["Holi", "Diwali", "Eid"],
+    answer: "Holi"
+  },
+  {
+    question: "Which is the longest river in South America? (Q470)",
+    options: ["Amazon", "Paraná", "Orinoco"],
+    answer: "Amazon"
+  },
+  {
+    question: "Who is the current Prime Minister of India? (Q471)",
+    options: ["Narendra Modi", "Rahul Gandhi", "Amit Shah"],
+    answer: "Narendra Modi"
+  },
+  {
+    question: "Which Indian state has the longest coastline? (Q472)",
+    options: ["Gujarat", "Tamil Nadu", "Andhra Pradesh"],
+    answer: "Gujarat"
+  },
+  {
+    question: "Which element has the atomic number 79? (Q473)",
+    options: ["Gold", "Silver", "Copper"],
+    answer: "Gold"
+  },
+  {
+    question: "Which animal is the tallest in the world? (Q474)",
+    options: ["Giraffe", "Elephant", "Kangaroo"],
+    answer: "Giraffe"
+  },
+  {
+    question: "What is the capital of Sri Lanka? (Q475)",
+    options: ["Colombo", "Kandy", "Galle"],
+    answer: "Colombo"
+  },
+  {
+    question: "Which vitamin is important for vision? (Q476)",
+    options: ["Vitamin A", "Vitamin C", "Vitamin D"],
+    answer: "Vitamin A"
+  },
+  {
+    question: "Who discovered America? (Q477)",
+    options: ["Christopher Columbus", "Vasco da Gama", "Magellan"],
+    answer: "Christopher Columbus"
+  },
+  {
+    question: "Which animal is known for changing its color? (Q478)",
+    options: ["Chameleon", "Frog", "Octopus"],
+    answer: "Chameleon"
+  },
+  {
+    question: "Which is the highest civilian award in India? (Q479)",
+    options: ["Bharat Ratna", "Padma Vibhushan", "Padma Shri"],
+    answer: "Bharat Ratna"
+  },
+  {
+    question: "What is the speed of light in vacuum? (Q480)",
+    options: ["300,000 km/s", "150,000 km/s", "200,000 km/s"],
+    answer: "300,000 km/s"
+  },
+  {
+    question: "Which planet is closest to the sun? (Q481)",
+    options: ["Mercury", "Venus", "Earth"],
+    answer: "Mercury"
+  },
+  {
+    question: "Which Indian scientist is known as the 'Missile Man'? (Q482)",
+    options: ["A.P.J. Abdul Kalam", "C.V. Raman", "Vikram Sarabhai"],
+    answer: "A.P.J. Abdul Kalam"
+  },
+  {
+    question: "What is the square root of 144? (Q483)",
+    options: ["12", "14", "10"],
+    answer: "12"
+  },
+  {
+    question: "Which country is known for maple syrup? (Q484)",
+    options: ["Canada", "USA", "Russia"],
+    answer: "Canada"
+  },
+  {
+    question: "Who is the founder of Microsoft? (Q485)",
+    options: ["Bill Gates", "Steve Jobs", "Mark Zuckerberg"],
+    answer: "Bill Gates"
+  },
+  {
+    question: "Which is the national tree of India? (Q486)",
+    options: ["Banyan", "Peepal", "Neem"],
+    answer: "Banyan"
+  },
+  {
+    question: "Which is the most spoken language in the world? (Q487)",
+    options: ["Mandarin Chinese", "English", "Hindi"],
+    answer: "Mandarin Chinese"
+  },
+  {
+    question: "Which gas do plants release during photosynthesis? (Q488)",
+    options: ["Oxygen", "Carbon Dioxide", "Nitrogen"],
+    answer: "Oxygen"
+  },
+  {
+    question: "What is the capital of Russia? (Q489)",
+    options: ["Moscow", "St. Petersburg", "Kazan"],
+    answer: "Moscow"
+  },
+  {
+    question: "Which festival marks the beginning of the Sikh new year? (Q490)",
+    options: ["Baisakhi", "Lohri", "Gurpurab"],
+    answer: "Baisakhi"
+  },
+  {
+    question: "Which blood group is known as the universal donor? (Q491)",
+    options: ["O negative", "A positive", "B negative"],
+    answer: "O negative"
+  },
+  {
+    question: "What is the name of the Indian Parliament building? (Q492)",
+    options: ["Sansad Bhavan", "Rashtrapati Bhavan", "Rajya Sabha"],
+    answer: "Sansad Bhavan"
+  },
+  {
+    question: "Which river flows through the Grand Canyon? (Q493)",
+    options: ["Colorado River", "Mississippi River", "Amazon River"],
+    answer: "Colorado River"
+  },
+  {
+    question: "Who was the first female President of India? (Q494)",
+    options: ["Pratibha Patil", "Sonia Gandhi", "Indira Gandhi"],
+    answer: "Pratibha Patil"
+  },
+  {
+    question: "What is the chemical symbol for Iron? (Q495)",
+    options: ["Fe", "Ir", "I"],
+    answer: "Fe"
+  },
+  {
+    question: "Which city is known for hosting the Kumbh Mela? (Q496)",
+    options: ["Prayagraj", "Varanasi", "Haridwar"],
+    answer: "Prayagraj"
+  },
+  {
+    question: "Which instrument is used to measure earthquakes? (Q497)",
+    options: ["Seismograph", "Thermometer", "Barometer"],
+    answer: "Seismograph"
+  },
+  {
+    question: "What is the national currency of Japan? (Q498)",
+    options: ["Yen", "Won", "Dollar"],
+    answer: "Yen"
+  },
+  {
+    question: "Which is the second largest continent? (Q499)",
+    options: ["Africa", "Asia", "North America"],
+    answer: "Africa"
+  },
+  {
+    question: "Which part of the plant is involved in reproduction? (Q500)",
+    options: ["Flower", "Root", "Stem"],
+    answer: "Flower"
   },
 ];
