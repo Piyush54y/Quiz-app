@@ -1253,4 +1253,254 @@
     options: ["Sputnik 1", "Aryabhata", "Apollo 11"],
     answer: "Sputnik 1"
   },
+      {
+    question: "Which is the national river of India? (Q301)",
+    options: ["Ganga", "Yamuna", "Godavari"],
+    answer: "Ganga"
+  },
+  {
+    question: "Which is the largest volcano in the world? (Q302)",
+    options: ["Mauna Loa", "Mount Fuji", "Mount Etna"],
+    answer: "Mauna Loa"
+  },
+  {
+    question: "Which Indian scientist won the Nobel Prize for Physics in 1930? (Q303)",
+    options: ["C.V. Raman", "Homi Bhabha", "Vikram Sarabhai"],
+    answer: "C.V. Raman"
+  },
+  {
+    question: "Which vitamin helps in improving eyesight? (Q304)",
+    options: ["Vitamin A", "Vitamin C", "Vitamin D"],
+    answer: "Vitamin A"
+  },
+  {
+    question: "Which planet has the most moons? (Q305)",
+    options: ["Saturn", "Jupiter", "Uranus"],
+    answer: "Saturn"
+  },
+  {
+    question: "Which state is famous for the Sun Temple in Konark? (Q306)",
+    options: ["Odisha", "Rajasthan", "Gujarat"],
+    answer: "Odisha"
+  },
+  {
+    question: "Who was the first Indian in space? (Q307)",
+    options: ["Rakesh Sharma", "Kalpana Chawla", "Sunita Williams"],
+    answer: "Rakesh Sharma"
+  },
+  {
+    question: "Which is the most abundant element in Earth's crust? (Q308)",
+    options: ["Oxygen", "Iron", "Silicon"],
+    answer: "Oxygen"
+  },
+  {
+    question: "Which river is known as the 'Dakshina Ganga'? (Q309)",
+    options: ["Godavari", "Krishna", "Cauvery"],
+    answer: "Godavari"
+  },
+  {
+    question: "Which Indian festival celebrates the victory of good over evil? (Q310)",
+    options: ["Dussehra", "Holi", "Raksha Bandhan"],
+    answer: "Dussehra"
+  },
+  {
+    question: "Who discovered India in 1498? (Q311)",
+    options: ["Vasco da Gama", "Christopher Columbus", "Ferdinand Magellan"],
+    answer: "Vasco da Gama"
+  },
+  {
+    question: "Which country is famous for fjords? (Q312)",
+    options: ["Norway", "Sweden", "Denmark"],
+    answer: "Norway"
+  },
+  {
+    question: "Which part of the plant is responsible for making food? (Q313)",
+    options: ["Leaves", "Roots", "Stem"],
+    answer: "Leaves"
+  },
+  {
+    question: "What is the capital of Indonesia? (Q314)",
+    options: ["Jakarta", "Bali", "Surabaya"],
+    answer: "Jakarta"
+  },
+  {
+    question: "Which is the longest canal in the world? (Q315)",
+    options: ["Grand Canal (China)", "Panama Canal", "Suez Canal"],
+    answer: "Grand Canal (China)"
+  },
+  {
+    question: "Which Indian leader is called 'Netaji'? (Q316)",
+    options: ["Subhas Chandra Bose", "Bhagat Singh", "Sardar Patel"],
+    answer: "Subhas Chandra Bose"
+  },
+  {
+    question: "Which planet has the shortest day? (Q317)",
+    options: ["Jupiter", "Earth", "Mars"],
+    answer: "Jupiter"
+  },
+  {
+    question: "Who is the first female IPS officer of India? (Q318)",
+    options: ["Kiran Bedi", "Indira Gandhi", "Kalpana Chawla"],
+    answer: "Kiran Bedi"
+  },
+  {
+    question: "Which organ controls all the functions of the body? (Q319)",
+    options: ["Brain", "Heart", "Liver"],
+    answer: "Brain"
+  },
+  {
+    question: "Which is the highest mountain peak in India? (Q320)",
+    options: ["Kangchenjunga", "Mount Everest", "Nanda Devi"],
+    answer: "Kangchenjunga"
+  },
+  {
+    question: "What is the chemical symbol for potassium? (Q321)",
+    options: ["K", "P", "Pt"],
+    answer: "K"
+  },
+  {
+    question: "Which state is famous for Bihu dance? (Q322)",
+    options: ["Assam", "Manipur", "Tripura"],
+    answer: "Assam"
+  },
+  {
+    question: "Which famous Indian temple is dedicated to Lord Venkateswara? (Q323)",
+    options: ["Tirupati", "Vaishno Devi", "Somnath"],
+    answer: "Tirupati"
+  },
+  {
+    question: "Which Indian city is called the City of Joy? (Q324)",
+    options: ["Kolkata", "Mumbai", "Chennai"],
+    answer: "Kolkata"
+  },
+  {
+    question: "Which Indian classical dance is from Odisha? (Q325)",
+    options: ["Odissi", "Bharatanatyam", "Kathak"],
+    answer: "Odissi"
+  },
+  {
+    question: "Who was the first woman Chief Minister of an Indian state? (Q326)",
+    options: ["Sucheta Kriplani", "Indira Gandhi", "Sarojini Naidu"],
+    answer: "Sucheta Kriplani"
+  },
+  {
+    question: "What is the currency of Bangladesh? (Q327)",
+    options: ["Taka", "Rupee", "Ringgit"],
+    answer: "Taka"
+  },
+  {
+    question: "Which vitamin is mainly obtained from sunlight? (Q328)",
+    options: ["Vitamin D", "Vitamin C", "Vitamin B12"],
+    answer: "Vitamin D"
+  },
+  {
+    question: "Who is the author of 'Discovery of India'? (Q329)",
+    options: ["Jawaharlal Nehru", "Mahatma Gandhi", "B.R. Ambedkar"],
+    answer: "Jawaharlal Nehru"
+  },
+  {
+    question: "Which planet is known as Earth's twin? (Q330)",
+    options: ["Venus", "Mars", "Jupiter"],
+    answer: "Venus"
+  },
+  {
+    question: "Who wrote the Indian National Anthem? (Q331)",
+    options: ["Rabindranath Tagore", "Bankim Chandra Chatterjee", "Sarojini Naidu"],
+    answer: "Rabindranath Tagore"
+  },
+  {
+    question: "Which is the highest dam in India? (Q332)",
+    options: ["Tehri Dam", "Bhakra Dam", "Sardar Sarovar Dam"],
+    answer: "Tehri Dam"
+  },
+  {
+    question: "Who was the first Indian President? (Q333)",
+    options: ["Dr. Rajendra Prasad", "Jawaharlal Nehru", "B.R. Ambedkar"],
+    answer: "Dr. Rajendra Prasad"
+  },
+  {
+    question: "What is the unit of distance in space? (Q334)",
+    options: ["Light year", "Kilometer", "Astronomical Unit"],
+    answer: "Light year"
+  },
+  {
+    question: "What is the name of the first Indian satellite? (Q335)",
+    options: ["Aryabhata", "INSAT", "Bhaskara"],
+    answer: "Aryabhata"
+  },
+  {
+    question: "Which city is known as the City of Temples? (Q336)",
+    options: ["Varanasi", "Bhubaneswar", "Haridwar"],
+    answer: "Bhubaneswar"
+  },
+  {
+    question: "What is the national emblem of India? (Q337)",
+    options: ["Lion Capital of Ashoka", "Lotus", "Tiger"],
+    answer: "Lion Capital of Ashoka"
+  },
+  {
+    question: "What is the scientific name of rice? (Q338)",
+    options: ["Oryza sativa", "Zea mays", "Triticum aestivum"],
+    answer: "Oryza sativa"
+  },
+  {
+    question: "Who was the first woman President of India? (Q339)",
+    options: ["Pratibha Patil", "Indira Gandhi", "Sonia Gandhi"],
+    answer: "Pratibha Patil"
+  },
+  {
+    question: "What is the capital of Bhutan? (Q340)",
+    options: ["Thimphu", "Kathmandu", "Paro"],
+    answer: "Thimphu"
+  },
+  {
+    question: "Which is the national fish of India? (Q341)",
+    options: ["Catla", "Hilsa", "Rohu"],
+    answer: "Hilsa"
+  },
+  {
+    question: "Which Indian state is known for the Sula Vineyards? (Q342)",
+    options: ["Maharashtra", "Goa", "Punjab"],
+    answer: "Maharashtra"
+  },
+  {
+    question: "Which is the largest delta in the world? (Q343)",
+    options: ["Sundarbans", "Ganges Delta", "Nile Delta"],
+    answer: "Sundarbans"
+  },
+  {
+    question: "Which Indian city is famous for Pashmina shawls? (Q344)",
+    options: ["Srinagar", "Amritsar", "Jaipur"],
+    answer: "Srinagar"
+  },
+  {
+    question: "What is the main ingredient in glass? (Q345)",
+    options: ["Silica", "Salt", "Clay"],
+    answer: "Silica"
+  },
+  {
+    question: "What is the color of chlorophyll? (Q346)",
+    options: ["Green", "Yellow", "Blue"],
+    answer: "Green"
+  },
+  {
+    question: "Which river flows through Paris? (Q347)",
+    options: ["Seine", "Danube", "Rhine"],
+    answer: "Seine"
+  },
+  {
+    question: "Which is the first Indian movie to win an Oscar? (Q348)",
+    options: ["RRR", "Gandhi", "Slumdog Millionaire"],
+    answer: "Slumdog Millionaire"
+  },
+  {
+    question: "Which is the largest democracy in the world? (Q349)",
+    options: ["India", "USA", "China"],
+    answer: "India"
+  },
+  {
+    question: "What is the boiling point of water in Fahrenheit? (Q350)",
+    options: ["212°F", "100°F", "180°F"],
+    answer: "212°F"
+  },
 ];
