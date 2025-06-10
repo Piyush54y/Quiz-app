@@ -999,4 +999,258 @@
     options: ["Carbon Dioxide", "Oxygen", "Hydrogen"],
     answer: "Carbon Dioxide"
   },
+      {
+    question: "What is the capital of Bihar? (Q251)",
+    options: ["Patna", "Gaya", "Muzaffarpur"],
+    answer: "Patna"
+  },
+  {
+    question: "Which planet is known as the 'Dwarf Planet'? (Q252)",
+    options: ["Pluto", "Mercury", "Venus"],
+    answer: "Pluto"
+  },
+  {
+    question: "Which Indian freedom fighter gave the slogan 'Give me blood and I will give you freedom'? (Q253)",
+    options: ["Subhas Chandra Bose", "Mahatma Gandhi", "Bhagat Singh"],
+    answer: "Subhas Chandra Bose"
+  },
+  {
+    question: "What is the largest plateau in the world? (Q254)",
+    options: ["Tibetan Plateau", "Deccan Plateau", "Colorado Plateau"],
+    answer: "Tibetan Plateau"
+  },
+  {
+    question: "Who is the founder of Facebook? (Q255)",
+    options: ["Mark Zuckerberg", "Elon Musk", "Jeff Bezos"],
+    answer: "Mark Zuckerberg"
+  },
+  {
+    question: "What is the scientific name of human beings? (Q256)",
+    options: ["Homo sapiens", "Homo erectus", "Homo habilis"],
+    answer: "Homo sapiens"
+  },
+  {
+    question: "What is the full form of ISRO? (Q257)",
+    options: [
+      "Indian Space Research Organisation",
+      "Indian Scientific Research Organisation",
+      "Indian Satellite Research Office"
+    ],
+    answer: "Indian Space Research Organisation"
+  },
+  {
+    question: "Which is the national reptile of India? (Q258)",
+    options: ["King Cobra", "Monitor Lizard", "Indian Python"],
+    answer: "King Cobra"
+  },
+  {
+    question: "Which vitamin helps in wound healing? (Q259)",
+    options: ["Vitamin C", "Vitamin D", "Vitamin B"],
+    answer: "Vitamin C"
+  },
+  {
+    question: "Which state in India has the highest literacy rate? (Q260)",
+    options: ["Kerala", "Goa", "Mizoram"],
+    answer: "Kerala"
+  },
+  {
+    question: "Which is the highest civilian award in India? (Q261)",
+    options: ["Bharat Ratna", "Padma Shri", "Padma Bhushan"],
+    answer: "Bharat Ratna"
+  },
+  {
+    question: "Which part of the plant absorbs water? (Q262)",
+    options: ["Roots", "Stem", "Leaves"],
+    answer: "Roots"
+  },
+  {
+    question: "What is the main source of energy for Earth? (Q263)",
+    options: ["Sun", "Moon", "Wind"],
+    answer: "Sun"
+  },
+  {
+    question: "What is the national motto of India? (Q264)",
+    options: ["Satyameva Jayate", "Jai Hind", "Vande Mataram"],
+    answer: "Satyameva Jayate"
+  },
+  {
+    question: "What is the process of digestion of food in humans called? (Q265)",
+    options: ["Digestion", "Respiration", "Excretion"],
+    answer: "Digestion"
+  },
+  {
+    question: "Who is called the 'Flying Sikh' of India? (Q266)",
+    options: ["Milkha Singh", "P.T. Usha", "Sachin Tendulkar"],
+    answer: "Milkha Singh"
+  },
+  {
+    question: "Which instrument is used to measure blood pressure? (Q267)",
+    options: ["Sphygmomanometer", "Thermometer", "Stethoscope"],
+    answer: "Sphygmomanometer"
+  },
+  {
+    question: "Who was the first woman Prime Minister of the UK? (Q268)",
+    options: ["Margaret Thatcher", "Elizabeth II", "Theresa May"],
+    answer: "Margaret Thatcher"
+  },
+  {
+    question: "Which Indian leader is known as 'Bapu'? (Q269)",
+    options: ["Mahatma Gandhi", "Nehru", "Subhas Chandra Bose"],
+    answer: "Mahatma Gandhi"
+  },
+  {
+    question: "Which is the smallest continent in the world? (Q270)",
+    options: ["Australia", "Europe", "Antarctica"],
+    answer: "Australia"
+  },
+  {
+    question: "What is the unit of electric current? (Q271)",
+    options: ["Ampere", "Volt", "Watt"],
+    answer: "Ampere"
+  },
+  {
+    question: "Which river is known as the Ganga of the South? (Q272)",
+    options: ["Godavari", "Kaveri", "Krishna"],
+    answer: "Godavari"
+  },
+  {
+    question: "Which is the longest river in the world? (Q273)",
+    options: ["Nile", "Amazon", "Yangtze"],
+    answer: "Nile"
+  },
+  {
+    question: "Who wrote the book 'Wings of Fire'? (Q274)",
+    options: ["A.P.J. Abdul Kalam", "Chetan Bhagat", "Dr. Ambedkar"],
+    answer: "A.P.J. Abdul Kalam"
+  },
+  {
+    question: "Which element is used in thermometers? (Q275)",
+    options: ["Mercury", "Iron", "Aluminium"],
+    answer: "Mercury"
+  },
+  {
+    question: "Who discovered the vaccine for smallpox? (Q276)",
+    options: ["Edward Jenner", "Louis Pasteur", "Alexander Fleming"],
+    answer: "Edward Jenner"
+  },
+  {
+    question: "What is the tallest waterfall in the world? (Q277)",
+    options: ["Angel Falls", "Niagara Falls", "Victoria Falls"],
+    answer: "Angel Falls"
+  },
+  {
+    question: "Which is the national aquatic animal of India? (Q278)",
+    options: ["Ganges River Dolphin", "Crocodile", "Turtle"],
+    answer: "Ganges River Dolphin"
+  },
+  {
+    question: "Who was the first woman to win a Nobel Prize? (Q279)",
+    options: ["Marie Curie", "Mother Teresa", "Rosalind Franklin"],
+    answer: "Marie Curie"
+  },
+  {
+    question: "What is the most abundant gas in the atmosphere? (Q280)",
+    options: ["Nitrogen", "Oxygen", "Carbon Dioxide"],
+    answer: "Nitrogen"
+  },
+  {
+    question: "Which state is famous for Kathakali dance? (Q281)",
+    options: ["Kerala", "Tamil Nadu", "Karnataka"],
+    answer: "Kerala"
+  },
+  {
+    question: "Which Mughal emperor was known as Akbar the Great? (Q282)",
+    options: ["Akbar", "Babur", "Aurangzeb"],
+    answer: "Akbar"
+  },
+  {
+    question: "What is the chemical formula of common salt? (Q283)",
+    options: ["NaCl", "HCl", "KCl"],
+    answer: "NaCl"
+  },
+  {
+    question: "Which city is known as the Steel City of India? (Q284)",
+    options: ["Jamshedpur", "Bhilai", "Rourkela"],
+    answer: "Jamshedpur"
+  },
+  {
+    question: "Which part of the body is affected by jaundice? (Q285)",
+    options: ["Liver", "Lung", "Kidney"],
+    answer: "Liver"
+  },
+  {
+    question: "Which river flows through London? (Q286)",
+    options: ["Thames", "Seine", "Danube"],
+    answer: "Thames"
+  },
+  {
+    question: "Which Indian cricketer is called 'Master Blaster'? (Q287)",
+    options: ["Sachin Tendulkar", "Virat Kohli", "MS Dhoni"],
+    answer: "Sachin Tendulkar"
+  },
+  {
+    question: "Which gas is used in fire extinguishers? (Q288)",
+    options: ["Carbon Dioxide", "Oxygen", "Helium"],
+    answer: "Carbon Dioxide"
+  },
+  {
+    question: "What is the longest bone in the human body? (Q289)",
+    options: ["Femur", "Tibia", "Humerus"],
+    answer: "Femur"
+  },
+  {
+    question: "Which continent has the most countries? (Q290)",
+    options: ["Africa", "Asia", "Europe"],
+    answer: "Africa"
+  },
+  {
+    question: "Which is the most populated city in India? (Q291)",
+    options: ["Mumbai", "Delhi", "Bangalore"],
+    answer: "Mumbai"
+  },
+  {
+    question: "What is the most widely spoken language in the world? (Q292)",
+    options: ["English", "Mandarin Chinese", "Spanish"],
+    answer: "Mandarin Chinese"
+  },
+  {
+    question: "Which Indian city is known for diamond cutting? (Q293)",
+    options: ["Surat", "Hyderabad", "Jaipur"],
+    answer: "Surat"
+  },
+  {
+    question: "Who is known as the Nightingale of India? (Q294)",
+    options: ["Sarojini Naidu", "Indira Gandhi", "Lata Mangeshkar"],
+    answer: "Sarojini Naidu"
+  },
+  {
+    question: "What is the capital of the United Arab Emirates? (Q295)",
+    options: ["Abu Dhabi", "Dubai", "Sharjah"],
+    answer: "Abu Dhabi"
+  },
+  {
+    question: "Which is the national game of India (unofficial)? (Q296)",
+    options: ["Hockey", "Cricket", "Kabaddi"],
+    answer: "Hockey"
+  },
+  {
+    question: "Which is the smallest bird in the world? (Q297)",
+    options: ["Hummingbird", "Sparrow", "Parrot"],
+    answer: "Hummingbird"
+  },
+  {
+    question: "Which is the hottest continent on Earth? (Q298)",
+    options: ["Africa", "Asia", "Australia"],
+    answer: "Africa"
+  },
+  {
+    question: "Which is the main gas found in LPG? (Q299)",
+    options: ["Butane", "Methane", "Ethane"],
+    answer: "Butane"
+  },
+  {
+    question: "What is the name of the first artificial satellite? (Q300)",
+    options: ["Sputnik 1", "Aryabhata", "Apollo 11"],
+    answer: "Sputnik 1"
+  },
 ];
