@@ -86,7 +86,10 @@ const templates = [
       Japan: "Tokyo",
       Brazil: "Brasília",
       Australia: "Canberra",
-      Canada: "Ottawa"
+      Canada: "Ottawa",
+      Italy: "Rome",
+      China: "Beijing",
+      Russia: "Moscow"
     }
   },
   {
@@ -96,7 +99,8 @@ const templates = [
       "Blue Planet": "Earth",
       "Ringed Planet": "Saturn",
       "Giant Planet": "Jupiter",
-      "Evening Star": "Venus"
+      "Evening Star": "Venus",
+      "Dwarf Planet": "Pluto"
     }
   },
   {
@@ -106,7 +110,8 @@ const templates = [
       "Hamlet": "William Shakespeare",
       "Pride and Prejudice": "Jane Austen",
       "The Alchemist": "Paulo Coelho",
-      "Animal Farm": "George Orwell"
+      "Animal Farm": "George Orwell",
+      "The Kite Runner": "Khaled Hosseini"
     }
   },
   {
@@ -116,7 +121,8 @@ const templates = [
       "100": "10",
       "81": "9",
       "49": "7",
-      "36": "6"
+      "36": "6",
+      "25": "5"
     }
   },
   {
@@ -126,36 +132,57 @@ const templates = [
       "USA": "1776",
       "Pakistan": "1947",
       "Bangladesh": "1971",
-      "Nigeria": "1960"
+      "Nigeria": "1960",
+      "South Africa": "1994"
+    }
+  },
+  {
+    template: "Which ocean is the largest?",
+    options: {
+      "largest": "Pacific Ocean",
+      "second largest": "Atlantic Ocean",
+      "third largest": "Indian Ocean"
+    }
+  },
+  {
+    template: "Which is the national animal of {country}?",
+    options: {
+      "India": "Tiger",
+      "Australia": "Kangaroo",
+      "USA": "Bald Eagle",
+      "Russia": "Bear",
+      "China": "Panda"
     }
   }
 ];
 
-// Generate 1000 unique questions
+// Utility to shuffle array
+function shuffle(array) {
+  return array.sort(() => Math.random() - 0.5);
+}
+
+// Generate 1000 questions
 while (questions.length < 1000) {
-  const item = templates[Math.floor(Math.random() * templates.length)];
-  const entries = Object.entries(item.options);
+  const block = templates[Math.floor(Math.random() * templates.length)];
+  const entries = Object.entries(block.options);
   const [key, correctAnswer] = entries[Math.floor(Math.random() * entries.length)];
 
-  const questionText = item.template
+  const questionText = block.template
     .replace("{country}", key)
     .replace("{nickname}", key)
     .replace("{book}", key)
     .replace("{number}", key);
 
-  // Create 3 options including the correct one
-  let options = [correctAnswer];
+  // Create answer options
+  const options = [correctAnswer];
   while (options.length < 3) {
-    const randomOption = entries[Math.floor(Math.random() * entries.length)][1];
-    if (!options.includes(randomOption)) options.push(randomOption);
+    const randomOpt = entries[Math.floor(Math.random() * entries.length)][1];
+    if (!options.includes(randomOpt)) options.push(randomOpt);
   }
 
-  // Shuffle options
-  options = options.sort(() => Math.random() - 0.5);
-
   questions.push({
-    question: questionText,
-    options: options,
+    question: `${questionText} (Q${questions.length + 1})`,
+    options: shuffle(options),
     answer: correctAnswer
   });
 }
