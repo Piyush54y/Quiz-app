@@ -6,14 +6,10 @@ const templates = [
     options: {
       India: "Delhi",
       France: "Paris",
-      Germany: "Berlin",
       Japan: "Tokyo",
-      Brazil: "Brasília",
+      Germany: "Berlin",
       Australia: "Canberra",
-      Canada: "Ottawa",
-      Italy: "Rome",
-      China: "Beijing",
-      Russia: "Moscow"
+      Italy: "Rome"
     }
   },
   {
@@ -23,8 +19,7 @@ const templates = [
       "Blue Planet": "Earth",
       "Ringed Planet": "Saturn",
       "Giant Planet": "Jupiter",
-      "Evening Star": "Venus",
-      "Dwarf Planet": "Pluto"
+      "Evening Star": "Venus"
     }
   },
   {
@@ -34,8 +29,7 @@ const templates = [
       "Hamlet": "William Shakespeare",
       "Pride and Prejudice": "Jane Austen",
       "The Alchemist": "Paulo Coelho",
-      "Animal Farm": "George Orwell",
-      "The Kite Runner": "Khaled Hosseini"
+      "Animal Farm": "George Orwell"
     }
   },
   {
@@ -45,8 +39,7 @@ const templates = [
       "100": "10",
       "81": "9",
       "49": "7",
-      "36": "6",
-      "25": "5"
+      "36": "6"
     }
   },
   {
@@ -54,38 +47,17 @@ const templates = [
     options: {
       "India": "1947",
       "USA": "1776",
-      "Pakistan": "1947",
       "Bangladesh": "1971",
       "Nigeria": "1960",
-      "South Africa": "1994"
-    }
-  },
-  {
-    template: "Which ocean is the largest?",
-    options: {
-      "largest": "Pacific Ocean",
-      "second largest": "Atlantic Ocean",
-      "third largest": "Indian Ocean"
-    }
-  },
-  {
-    template: "Which is the national animal of {country}?",
-    options: {
-      "India": "Tiger",
-      "Australia": "Kangaroo",
-      "USA": "Bald Eagle",
-      "Russia": "Bear",
-      "China": "Panda"
+      "Pakistan": "1947"
     }
   }
 ];
 
-// Utility to shuffle array
 function shuffle(array) {
   return array.sort(() => Math.random() - 0.5);
 }
 
-// Generate 1000 questions
 while (questions.length < 1000) {
   const block = templates[Math.floor(Math.random() * templates.length)];
   const entries = Object.entries(block.options);
@@ -97,11 +69,10 @@ while (questions.length < 1000) {
     .replace("{book}", key)
     .replace("{number}", key);
 
-  // Create answer options
   const options = [correctAnswer];
   while (options.length < 3) {
-    const randomOpt = entries[Math.floor(Math.random() * entries.length)][1];
-    if (!options.includes(randomOpt)) options.push(randomOpt);
+    const random = entries[Math.floor(Math.random() * entries.length)][1];
+    if (!options.includes(random)) options.push(random);
   }
 
   questions.push({
