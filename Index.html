@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -73,7 +73,7 @@
     <button class="btn" onclick="submitWithdrawal()">Submit</button>
   </div>
 
-  <!-- Load your external question file -->
+  <!-- Load the external question file -->
   <script src="questions-1000.js"></script>
 
   <script>
@@ -89,8 +89,25 @@
       localStorage.setItem("quizCount", quizCount);
     }
 
+    let usedQuestions = [];
+
     function loadQuestion() {
-      const q = questions[Math.floor(Math.random() * questions.length)];
+      if (quizCount >= maxDailyQuizzes) {
+        document.getElementById("qText").innerText = "🚫 Daily limit reached (20 quizzes). Come back tomorrow!";
+        document.getElementById("options").innerHTML = "";
+        return;
+      }
+
+      if (usedQuestions.length === questions.length) {
+        usedQuestions = [];
+      }
+
+      let q;
+      do {
+        q = questions[Math.floor(Math.random() * questions.length)];
+      } while (usedQuestions.includes(q));
+      usedQuestions.push(q);
+
       document.getElementById("qText").innerText = q.question;
       document.getElementById("options").innerHTML = q.options.map(opt =>
         `<button class="btn" onclick="checkAnswer('${opt}', '${q.answer}')">${opt}</button>`
@@ -144,26 +161,7 @@
       }
     }
 
-    let usedQuestions = [];
-
-function loadQuestion() {
-  if (usedQuestions.length === questions.length) {
-    usedQuestions = []; // Reset if all questions used
-  }
-
-  let q;
-  do {
-    q = questions[Math.floor(Math.random() * questions.length)];
-  } while (usedQuestions.includes(q));
-
-  usedQuestions.push(q);
-
-  document.getElementById("qText").innerText = q.question;
-  document.getElementById("options").innerHTML = q.options.map(opt =>
-    `<button class="btn" onclick="checkAnswer('${opt}', '${q.answer}')">${opt}</button>`
-  ).join('');
-  document.getElementById("result").innerText = "";
-}
+    loadQuestion(); // initial question load
   </script>
 </body>
 </html>
