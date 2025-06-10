@@ -73,10 +73,21 @@
     <button class="btn" onclick="submitWithdrawal()">Submit</button>
   </div>
 
-  <!-- Load the external question file -->
-  <script src="questions-1000.js"></script>
-
   <script>
+    // Sample Questions – Add more or link external file
+    const questions = [
+      {
+        question: "What is the capital of India?",
+        options: ["Delhi", "Mumbai", "Kolkata"],
+        answer: "Delhi"
+      },
+      {
+        question: "Which planet is known as the Red Planet?",
+        options: ["Mars", "Earth", "Venus"],
+        answer: "Mars"
+      }
+    ];
+
     let balance = parseFloat(localStorage.getItem("balance")) || 0;
     let quizCount = parseInt(localStorage.getItem("quizCount")) || 0;
     const maxDailyQuizzes = 20;
@@ -89,25 +100,8 @@
       localStorage.setItem("quizCount", quizCount);
     }
 
-    let usedQuestions = [];
-
     function loadQuestion() {
-      if (quizCount >= maxDailyQuizzes) {
-        document.getElementById("qText").innerText = "🚫 Daily limit reached (20 quizzes). Come back tomorrow!";
-        document.getElementById("options").innerHTML = "";
-        return;
-      }
-
-      if (usedQuestions.length === questions.length) {
-        usedQuestions = [];
-      }
-
-      let q;
-      do {
-        q = questions[Math.floor(Math.random() * questions.length)];
-      } while (usedQuestions.includes(q));
-      usedQuestions.push(q);
-
+      const q = questions[Math.floor(Math.random() * questions.length)];
       document.getElementById("qText").innerText = q.question;
       document.getElementById("options").innerHTML = q.options.map(opt =>
         `<button class="btn" onclick="checkAnswer('${opt}', '${q.answer}')">${opt}</button>`
@@ -149,19 +143,34 @@
 
     function submitWithdrawal() {
       const upi = document.getElementById("upiId").value;
-      if (upi) {
-        alert(`🎉 UPI request submitted for ₹${balance.toFixed(2)} to ${upi}`);
-        balance = 0;
-        quizCount = 0;
-        saveProgress();
-        document.getElementById("balance").innerText = balance.toFixed(2);
-        document.getElementById("upiForm").style.display = 'none';
-      } else {
-        alert("❗ Enter a valid UPI ID.");
+      if (!upi) {
+        alert("❗ Please enter a valid UPI ID.");
+        return;
       }
+
+      const amount = balance.toFixed(2);
+
+      const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSc_VFKnD6XCUFi8Yu7MD0DrwbPZ4eH5JuEkPNgTzbtA0Lu5Xw/formResponse";
+
+      const formData = new FormData();
+      formData.append("entry.1319748268", upi);     // UPI ID field
+      formData.append("entry.1425363057", amount);  // Amount field
+
+      fetch(formUrl, {
+        method: "POST",
+        mode: "no-cors",
+        body: formData
+      });
+
+      alert(`🎉 Withdrawal request for ₹${amount} sent to ${upi}`);
+      balance = 0;
+      quizCount = 0;
+      saveProgress();
+      document.getElementById("balance").innerText = balance.toFixed(2);
+      document.getElementById("upiForm").style.display = 'none';
     }
 
-    loadQuestion(); // initial question load
+    loadQuestion();
   </script>
 </body>
 </html>
