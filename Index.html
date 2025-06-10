@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quiz & Earn ₹1</title>
+  <title>Quiz & Earn ₹0.50</title>
   <style>
     body {
       font-family: sans-serif;
@@ -52,12 +52,17 @@
 </head>
 <body>
 
-  <h1>🧠 Quiz & Earn ₹1</h1>
+  <div style="background: #ffeb3b; padding: 20px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin-bottom: 20px;">
+    <h2 style="margin: 0; color: #d32f2f;">🎁 Take Quiz & Earn ₹1000 Paytm Cash!</h2>
+    <p style="font-size: 16px; color: #333;">💸 Earn ₹0.50 per quiz | 🧠 Max 20 quizzes daily</p>
+  </div>
+
+  <h1>🧠 Quiz & Earn ₹0.50</h1>
   <div class="question-box">
     <p id="qText">Loading question...</p>
     <div id="options"></div>
     <p id="result"></p>
-    <p>🏦 Balance: ₹<span id="balance">0</span></p>
+    <p>🏦 Balance: ₹<span id="balance">0.00</span></p>
     <button class="btn" onclick="showWithdrawal()">💳 Withdraw</button>
   </div>
 
@@ -68,30 +73,38 @@
     <button class="btn" onclick="submitWithdrawal()">Submit</button>
   </div>
 
-  <!-- Load Questions from External File -->
   <script src="questions.js"></script>
-
-  <!-- Quiz Logic -->
   <script>
     let balance = 0;
+    let quizCount = 0;
+    const maxDailyQuizzes = 20;
+    const perQuizReward = 0.50;
 
     function loadQuestion() {
       const q = questions[Math.floor(Math.random() * questions.length)];
       document.getElementById("qText").innerText = q.question;
-      document.getElementById("options").innerHTML = q.options.map(opt =>
-        `<button class="btn" onclick="checkAnswer('${opt}', '${q.answer}')">${opt}</button>`
-      ).join('');
+      document.getElementById("options").innerHTML = q.options.map(function(opt) {
+        return `<button class='btn' onclick="checkAnswer('${opt}', '${q.answer}')">${opt}</button>`;
+      }).join('');
       document.getElementById("result").innerText = "";
     }
 
     function checkAnswer(selected, correct) {
       const result = document.getElementById("result");
+
+      if (quizCount >= maxDailyQuizzes) {
+        result.innerText = "🚫 Daily limit reached (20 quizzes). Come back tomorrow!";
+        return;
+      }
+
       if (selected === correct) {
-        result.innerText = "✅ Correct! ₹1 added.";
-        balance += 1;
-        document.getElementById("balance").innerText = balance;
+        quizCount++;
+        balance += perQuizReward;
+        result.innerText = `✅ Correct! +₹${perQuizReward.toFixed(2)} (Quiz ${quizCount}/${maxDailyQuizzes})`;
+        document.getElementById("balance").innerText = balance.toFixed(2);
+
         setTimeout(() => {
-          window.open("https://your-monetag-smartlink.com", "_blank"); // Monetag link
+          window.open("https://otieu.com/4/4077241", "_blank");
           loadQuestion();
         }, 1000);
       } else {
@@ -110,12 +123,13 @@
     function submitWithdrawal() {
       const upi = document.getElementById("upiId").value;
       if (upi) {
-        alert(`🎉 Request sent to ${upi} for ₹${balance}.`);
+        alert(`🎉 UPI request submitted for ₹${balance.toFixed(2)} to ${upi}`);
         balance = 0;
-        document.getElementById("balance").innerText = balance;
+        quizCount = 0;
+        document.getElementById("balance").innerText = balance.toFixed(2);
         document.getElementById("upiForm").style.display = 'none';
       } else {
-        alert("❗ Please enter a valid UPI ID.");
+        alert("❗ Enter a valid UPI ID.");
       }
     }
 
